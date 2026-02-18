@@ -7,32 +7,32 @@ export default function ProductIntro() {
 
                 {/* ===== MAIN PRODUCT: EDULINE ===== */}
                 <div className="mb-32 grid lg:grid-cols-2 gap-16 items-center">
-                    
+
                     {/* Text Content */}
                     <div className="order-2 lg:order-1">
                         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-sm font-semibold mb-6">
                             <Zap size={16} />
                             <span>New Release</span>
                         </div>
-                        
+
                         <h2 className="text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight mb-6">
-                            Introducing Eduline <br /> 
+                            Introducing Eduline <br />
                             <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
                                 Brand Your Teaching
                             </span>
                         </h2>
 
                         <p className="text-xl text-slate-600 leading-relaxed mb-8">
-                            Launch your own white-label learning platform. Sell courses, manage students, 
+                            Launch your own white-label learning platform. Sell courses, manage students,
                             and scale your education business without touching a single line of code.
                         </p>
 
                         <div className="grid sm:grid-cols-2 gap-4">
                             {[
-                                { text: "White-label platform", icon: <ShieldCheck className="text-blue-500" size={20}/> },
-                                { text: "Student management", icon: <CheckCircle2 className="text-blue-500" size={20}/> },
-                                { text: "Anti-piracy delivery", icon: <ShieldCheck className="text-blue-500" size={20}/> },
-                                { text: "Real-time analytics", icon: <LineChart className="text-blue-500" size={20}/> },
+                                { text: "White-label platform", icon: <ShieldCheck className="text-blue-500" size={20} /> },
+                                { text: "Student management", icon: <CheckCircle2 className="text-blue-500" size={20} /> },
+                                { text: "Anti-piracy delivery", icon: <ShieldCheck className="text-blue-500" size={20} /> },
+                                { text: "Real-time analytics", icon: <LineChart className="text-blue-500" size={20} /> },
                             ].map((item, i) => (
                                 <div key={i} className="flex items-center gap-3 p-3 bg-white rounded-xl shadow-sm border border-slate-100">
                                     {item.icon}
@@ -40,6 +40,27 @@ export default function ProductIntro() {
                                 </div>
                             ))}
                         </div>
+                        {/* CTA */}
+                        <div className="mt-8 flex flex-col sm:flex-row gap-4">
+
+                            <a
+                                href="https://eduline.everlinesys.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center justify-center px-7 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition shadow-lg shadow-blue-600/20"
+                                style={{ color: "white" }}  >
+                                Visit Eduline Platform
+                            </a>
+
+                            <a
+                                href="/products/eduline"
+                                className="inline-flex items-center justify-center px-7 py-3 bg-white border border-slate-300 text-slate-700 font-semibold rounded-xl hover:bg-slate-50 transition"
+                            >
+                                Learn More
+                            </a>
+
+                        </div>
+
                     </div>
 
                     {/* Image with Decorative Backdrop */}

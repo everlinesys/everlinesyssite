@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <section className="bg-white py-24">
       <div className="max-w-7xl mx-auto px-6">
-        
+
         {/* ===== HEADER ===== */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 gap-8">
           <div className="max-w-2xl">
@@ -22,10 +22,10 @@ export default function Contact() {
         </div>
 
         <div className="grid lg:grid-cols-12 gap-16 items-start">
-          
+
           {/* ==== LEFT: CONTACT INFO ==== */}
           <div className="lg:col-span-5 space-y-12">
-            
+
             {/* Info Cards */}
             <div className="grid gap-8">
               <div className="group flex items-start gap-6">
@@ -80,7 +80,7 @@ export default function Contact() {
 
           {/* ==== RIGHT: CONTACT FORM ==== */}
           <div className="lg:col-span-7">
-            <form className="relative bg-white p-8 md:p-12 rounded-[2.5rem] shadow-2xl shadow-slate-200 border border-slate-100">
+            <form className="relative bg-white p-8 md:p-12 rounded-[2.5rem] shadow-2xl shadow-slate-200 border border-slate-100 text-black">
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <div className="space-y-2">
                   <label className="text-sm font-bold text-slate-700 ml-1">Your Name</label>
@@ -109,14 +109,17 @@ export default function Contact() {
                 />
               </div>
 
-              <button
-                type="submit"
-                className="group flex items-center justify-center gap-3 w-full bg-blue-600 text-white py-5 rounded-2xl font-bold text-lg hover:bg-blue-700 shadow-xl shadow-blue-500/30 transition-all active:scale-[0.98]"
-              >
-                Send Message
+              <a
+                href="https://wa.me/919400690911?text=Hello%20Everlinesys%2C%20I%20want%20to%20know%20more%20about%20your%20products."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center justify-center gap-3 w-full bg-blue-600 text-white py-5 rounded-2xl font-bold text-lg hover:bg-green-700 shadow-xl shadow-green-500/30 transition-all active:scale-[0.98]"
+             style={{color:"white"}} >
+                Send 
                 <Send size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-              </button>
-              
+              </a>
+
+
               <p className="mt-6 text-center text-xs text-slate-400">
                 By clicking send, you agree to our privacy policy and terms of service.
               </p>

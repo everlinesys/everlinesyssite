@@ -13,7 +13,7 @@ export default function AnnouncementBar() {
         <div className="flex flex-col gap-2">
 
           <p className="text-lg sm:text-xl font-bold">
-            Product Launch — Eduline Teaching
+            Product Launch — <a href="https://eduline.everlinesys.com" className="text-blue-400">Eduline Teaching</a>
           </p>
 
           <p className="text-sm text-gray-300 flex flex-wrap items-center gap-5">

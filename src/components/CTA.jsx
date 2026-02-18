@@ -27,7 +27,8 @@ export default function CTA() {
 
                     {/* 🔥 HARD CTA */}
                     <Link
-                        to="/products/eduline"
+                        to="https://eduline.everlinesys.com"
+                        target="_blank"
                         className="bg-white text-blue-700 px-8 py-4 rounded-full font-semibold shadow hover:bg-blue-50 transition"
                     >
                         Start with Eduline
