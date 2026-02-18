@@ -1,6 +1,6 @@
 import CTA from "../../components/CTA"
 import Capabilities from "../../components/Features"
-import Hero from "../../components/hero"
+import Hero from "../../components/Hero"
 import ProductIntro from "../../components/ProductIntro"
 import Reviews from "../../components/Reviews"
 import Trust from "../../components/Trust"
