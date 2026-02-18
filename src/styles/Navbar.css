@@ -1,0 +1,96 @@
+/* Header */
+.header {
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  z-index: 1000;
+  width: 100%;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  color: #2563eb;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+/* Nav links */
+.nav {
+  display: flex;
+  gap: 24px;
+}
+
+.link {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.link:hover {
+  color: #2563eb;
+}
+
+/* Right actions */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.login {
+  color: #4b5563;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login:hover {
+  color: #2563eb;
+}
+
+/* CTA button */
+.cta {
+  background: #2563eb;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.cta:hover {
+  background: #1d4ed8;
+}
+
+/* Mobile menu button */
+.menuBtn {
+  display: none;
+  background: none;
+  border: none;
+  color: #111827;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Mobile menu */
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 20px;
+  gap: 12px;
+  background: #ffffff;
+  border-top: 1px solid #e5e7eb;
+}
