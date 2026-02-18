@@ -1,70 +1,96 @@
+import { Rocket, Laptop, CheckCircle2, ArrowRight, Zap, Settings } from "lucide-react";
+
 export default function Capabilities() {
   return (
-    <section className="relative bg-white py-18 overflow-hidden">
+    <section className="relative py-24 bg-white overflow-hidden">
+      
+      {/* Dynamic Angled Background */}
+      <div className="absolute top-0 left-0 w-full h-[500px] bg-blue-600 -skew-y-3 origin-top-left z-0" />
 
-      {/* Tilt background */}
-      <div className="absolute top-0 md:top-6 left-0 w-full pointer-events-none z-1 overflow">
-        <div className="w-[140vw] -ml-[50vw] h-39  rotate-[-2deg]" style={{backgroundColor:"#2563eb"}} />
-      </div> <div className="absolute top-10 md:top-10 left-0 w-full pointer-events-none z-2">
-        <div className="w-[500vw] ml-[4vw] h-65 md:h-45  rotate-[-2deg]" style={{backgroundColor:"#2563eb"}} />
-      </div>
-
-      {/* Content */}
-      <div className="relative max-w-7xl mx-auto px-6 z-9 mt-0">
-
-        {/* Heading */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-100 mb-4">
-            Start with a Product / <span className="text-gray-900"> Build a Complete System</span>
+      <div className="relative max-w-7xl mx-auto px-6 z-10">
+        
+        {/* Header Section */}
+        <div className="text-center mb-20 pt-10 md:pt-0">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tight">
+            Start with a Product / <span className="text-blue-100">Build a System</span>
           </h2>
-          <p className="text-lg text-gray-300 max-w-3xl mx-auto ">
-            Most teams begin with one of our ready-to-use platforms.
-            As you grow, Everline Systems can unify your operations into
-            a single intelligent system tailored to your business.
+          <p className="text-lg md:text-xl text-blue-50 max-w-3xl mx-auto leading-relaxed">
+            Most teams begin with one of our ready-to-use platforms. 
+            As you grow, we unify your operations into a single intelligent system 
+            tailored to your business.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
-
-          {/* PRODUCTS */}
-          <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
-            <h3 className="text-2xl font-semibold text-gray-900 mb-6">
+        <div className="grid lg:grid-cols-2 gap-8 items-stretch">
+          
+          {/* Card 1: READY PRODUCTS */}
+          <div className="group bg-white p-8 md:p-12 rounded-[2.5rem] shadow-2xl border border-slate-100 transition-all duration-300 hover:-translate-y-2">
+            <div className="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 mb-8 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+              <Rocket size={32} />
+            </div>
+            
+            <h3 className="text-3xl font-bold text-slate-900 mb-6">
               Launch Faster with Our Products
             </h3>
 
-            <p className="text-gray-600 mb-6">
-              Deploy proven solutions designed to handle real-world operations —
-              from education platforms to customer management and business tools.
+            <p className="text-slate-600 text-lg mb-8 leading-relaxed">
+              Deploy proven solutions designed to handle real-world operations—from 
+              education platforms to customer management tools.
             </p>
 
-            <ul className="space-y-4 text-gray-700">
-              <li>✔ Eduline — Build and brand your own learning platform</li>
-              <li>✔ WhatsApp CRM — Turn conversations into customers</li>
-              <li>✔ Billing & Stock — Manage operations with clarity</li>
-              <li>✔ Quick deployment with minimal setup</li>
-              <li>✔ Scales as your business grows</li>
+            <ul className="space-y-4 mb-10">
+              {[
+                "Eduline — Brand your own learning platform",
+                "WhatsApp CRM — Conversation-driven sales",
+                "Billing & Stock — Operational clarity",
+                "Quick deployment with minimal setup",
+                "Scalable cloud infrastructure"
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-3 text-slate-700 font-medium">
+                  <CheckCircle2 className="text-blue-500 mt-1 shrink-0" size={20} />
+                  {item}
+                </li>
+              ))}
             </ul>
+
+            <button className="flex items-center gap-2 text-blue-600 font-bold text-lg group-hover:gap-4 transition-all">
+              Explore Products <ArrowRight size={20} />
+            </button>
           </div>
 
-          {/* CUSTOM SYSTEMS */}
-          <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
-            <h3 className="text-2xl font-semibold text-gray-900 mb-6">
-              Transform Your Business with Custom Systems
+          {/* Card 2: CUSTOM SYSTEMS (Dark Mode) */}
+          <div className="group bg-slate-900 p-8 md:p-12 rounded-[2.5rem] shadow-2xl border border-slate-800 transition-all duration-300 hover:-translate-y-2 text-white">
+            <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center text-white mb-8 group-hover:rotate-12 transition-transform">
+              <Settings size={32} />
+            </div>
+            
+            <h3 className="text-3xl font-bold mb-6">
+              Custom Integrated Systems
             </h3>
 
-            <p className="text-gray-600 mb-6">
-              When off-the-shelf tools aren’t enough, we design and build
-              fully integrated platforms tailored to your workflows,
-              data, and long-term strategy.
+            <p className="text-slate-400 text-lg mb-8 leading-relaxed">
+              When off-the-shelf tools aren’t enough, we build fully integrated 
+              platforms tailored to your specific data and long-term strategy.
             </p>
 
-            <ul className="space-y-4 text-gray-700">
-              <li>✔ Business process analysis & system architecture</li>
-              <li>✔ Custom platforms and automation solutions</li>
-              <li>✔ Websites, apps, and internal tools</li>
-              <li>✔ Integration of all your software into one system</li>
-              <li>✔ Long-term digital transformation support</li>
+            <ul className="space-y-4 mb-10">
+              {[
+                "Business process & architecture design",
+                "Custom automation & workflow solutions",
+                "Websites, apps, and internal tools",
+                "Unified software ecosystem integration",
+                "Digital transformation strategy"
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-3 text-slate-300 font-medium">
+                  <Zap className="text-blue-400 mt-1 shrink-0" size={20} />
+                  {item}
+                </li>
+              ))}
             </ul>
+
+            <button className="flex items-center gap-2 text-blue-400 font-bold text-lg group-hover:gap-4 transition-all">
+              Consult with Experts <ArrowRight size={20} />
+            </button>
           </div>
 
         </div>

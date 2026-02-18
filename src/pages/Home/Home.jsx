@@ -1,3 +1,4 @@
+import AnnouncementBar from "../../components/AnnouncementBar"
 import CTA from "../../components/CTA"
 import Capabilities from "../../components/Features"
 import Hero from "../../components/Hero"
@@ -8,6 +9,7 @@ import Trust from "../../components/Trust"
 export default function Home() {
     return (
         <div>
+            <AnnouncementBar />
             <Hero />
             <ProductIntro />
             <Capabilities />

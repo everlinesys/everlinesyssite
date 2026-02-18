@@ -6,37 +6,37 @@ const reviews = [
     quote: "Eduline transformed how we deliver training programs. Everything is now managed from one platform.",
     name: "Rahul Menon",
     role: "Director, Apex Training Institute",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800",
+    image: "https://images.unsplash.com/photo-1607081692251-d689f1b9af84?q=80&w=387",
   },
   {
     quote: "Our WhatsApp CRM increased conversion rates dramatically by organizing all enquiries in one place.",
     name: "Neha Kapoor",
     role: "Operations Head, SkillHub",
-    image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=800",
+    image: "https://images.unsplash.com/photo-1607189200597-4d0923ef98c6?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     quote: "Billing and inventory tracking became effortless. We saved hours every week.",
     name: "Arjun Patel",
     role: "Owner, TechMart",
-    image: "https://images.unsplash.com/photo-1544725176-7c40e5a2c9f9?q=80&w=800",
+    image: "https://images.unsplash.com/photo-1607346256330-dee7af15f7c5?q=80&w=906&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     quote: "Everline Systems built a custom platform that unified all our operations into one dashboard.",
     name: "Priya Nair",
     role: "CEO, EduSphere",
-    image: "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?q=80&w=800",
+    image: "https://plus.unsplash.com/premium_photo-1682089810582-f7b200217b67",
   },
   {
     quote: "Automation reduced manual work by over 60%. Our team now focuses on growth instead of processes.",
     name: "Karan Shah",
     role: "Founder, Growth Academy",
-    image: "https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=800",
+    image: "https://images.unsplash.com/flagged/photo-1571367034861-e6729ad9c2d5?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     quote: "From website to internal tools, EverlineSys delivered a complete digital transformation.",
     name: "Aisha Khan",
     role: "Director, LearnPro Institute",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=800",
+    image: "https://images.unsplash.com/photo-1591980896142-4e36328411ec?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
 
