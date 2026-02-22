@@ -53,7 +53,7 @@ export default function ProductIntro() {
                             </a>
 
                             <a
-                                href="/products/eduline"
+                                href="https://eduline.everlinesys.com"
                                 className="inline-flex items-center justify-center px-7 py-3 bg-white border border-slate-300 text-slate-700 font-semibold rounded-xl hover:bg-slate-50 transition"
                             >
                                 Learn More
@@ -86,17 +86,36 @@ export default function ProductIntro() {
                                 className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700"
                             />
                         </div>
-                        <div className="p-8">
+                        <div className="px-8">
                             <div className="w-12 h-12 bg-green-50 text-green-600 rounded-xl flex items-center justify-center mb-6">
                                 <MessageSquare size={24} />
                             </div>
                             <h3 className="text-2xl font-bold text-slate-900 mb-4">
-                                WhatsApp-Based CRM
+                                Deal Chat - WhatsApp CRM
                             </h3>
                             <p className="text-slate-600 leading-relaxed">
                                 Capture enquiries and automate responses. Convert conversations
                                 into loyal customers using specialized WhatsApp workflows.
                             </p>
+                        </div>
+                        <div className="mx-10 mt-8 flex flex-col sm:flex-row gap-4 mb-8">
+
+                            <a
+                                href="https://dealchat.everlinesys.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center justify-center px-7 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition shadow-lg shadow-blue-600/20"
+                                style={{ color: "white" }}  >
+                                Visit Deal Chat
+                            </a>
+
+                            <a
+                                href="https://dealchat.everlinesys.com"
+                                className="inline-flex items-center justify-center px-7 py-3 bg-white border border-slate-300 text-slate-700 font-semibold rounded-xl hover:bg-slate-50 transition"
+                            >
+                                Learn More
+                            </a>
+
                         </div>
                     </div>
 
@@ -109,7 +128,7 @@ export default function ProductIntro() {
                                 className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700"
                             />
                         </div>
-                        <div className="p-8">
+                        <div className="px-8">
                             <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-6">
                                 <LineChart size={24} />
                             </div>
@@ -120,6 +139,25 @@ export default function ProductIntro() {
                                 Simplify operations with automated billing, inventory tracking,
                                 and professional business insights — all in one dashboard.
                             </p>
+                        </div>
+                        <div className="mx-10 mt-8 flex flex-col sm:flex-row gap-4 mb-8">
+
+                            <a
+                                href="api.whatsapp.com/send?phone=919400690911&text=Hello%20Everlinesys%2C%20I%20want%20to%20know%20more%20about%20your%20Billing%20and%20Stock%20Management%20product."
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center justify-center px-7 py-3 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition shadow-lg shadow-blue-600/20"
+                                style={{ color: "white" }}  >
+                                Get Started
+                            </a>
+
+                            <a
+                                href="api.whatsapp.com/send?phone=919400690911&text=Hello%20Everlinesys%2C%20I%20want%20to%20know%20more%20about%20your%20Billing%20and%20Stock%20Management%20product."
+                                className="inline-flex items-center justify-center px-7 py-3 bg-white border border-slate-300 text-slate-700 font-semibold rounded-xl hover:bg-slate-50 transition"
+                            >
+                                Learn More
+                            </a>
+
                         </div>
                     </div>
 
