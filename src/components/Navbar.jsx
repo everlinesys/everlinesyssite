@@ -52,7 +52,7 @@ export default function Navbar() {
 
             {/* Mobile Menu */}
             {menuOpen && (
-                <div className="md:hidden border-t bg-white">
+                <div className="md:hidden border-t bg-white fixed inset-x-0 top-16 z-40 shadow-lg">
                     <div className="px-4 py-4 flex flex-col gap-4">
 
                         <Link to="/products" onClick={() => setMenuOpen(false)}>Products</Link>

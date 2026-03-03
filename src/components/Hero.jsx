@@ -54,7 +54,9 @@ export default function Hero() {
         </h1>
 
         {/* Description */}
-        <p className="mt-6 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto">
+        <p className="mt-8 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto"
+        
+        >
           Everline Systems builds scalable digital platforms that automate
           operations, manage workflows, and power your growth.
         </p>
