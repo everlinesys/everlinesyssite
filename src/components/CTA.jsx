@@ -7,7 +7,7 @@ export default function CTA() {
 
             {/* Tilted background */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                <div className="w-[490vw] -ml-[20vw]  h-80 bg-blue-600 rotate-[-3deg]" />
+                <div className="w-[490vw] -ml-[20vw]  h-screen bg-blue-600 rotate-[-3deg]" />
             </div>
 
             {/* Content */}
