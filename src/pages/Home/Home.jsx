@@ -11,7 +11,7 @@ import Trust from "../../components/Trust"
 export default function Home() {
     return (
         <div>
-            {/* <AnnouncementBar /> */}
+            <AnnouncementBar />
             <Hero />
             <ProductIntro />
             <Capabilities />
