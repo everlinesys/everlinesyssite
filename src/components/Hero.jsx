@@ -23,7 +23,7 @@ export default function Hero() {
       <div className="absolute top-0 left-0 w-full h-64 bg-gradient-to-b from-blue-50 to-transparent -z-10" />
 
       {/* Content */}
-      <div className="max-w-4xl px-4 sm:px-6 text-center">
+      <div className="max-w-4xl px:2 md:px-4 sm:px-6 text-center">
 
         {/* Headline */}
         <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight">
@@ -96,7 +96,7 @@ export default function Hero() {
 
       {/* Image */}
       {/* Image */}
-      <motion.div
+      {/* <motion.div
         ref={imgRef}
         initial={{ opacity: 0, scale: 0.85, y: 40 }}
         animate={visible ? { opacity: 1, scale: 1, y: 0 } : {}}
@@ -108,7 +108,7 @@ export default function Hero() {
           alt="Dashboard preview"
           className="rounded-xl shadow-2xl border border-white w-full"
         />
-      </motion.div>
+      </motion.div> */}
 
 
     </section>
