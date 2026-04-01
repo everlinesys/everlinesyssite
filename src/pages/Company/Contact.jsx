@@ -59,7 +59,7 @@ export default function Contact() {
                 <div>
                   <h3 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-1">Office</h3>
                   <p className="text-xl font-bold text-slate-900 leading-tight">
-                    Infopark Phase 2, Kochi <br />
+                    kakkanad, <br />Near Infopark Phase 2, Kochi <br />
                     <span className="text-slate-500 font-medium text-lg">Kerala, India — 682030</span>
                   </p>
                 </div>
@@ -86,7 +86,7 @@ export default function Contact() {
                   <label className="text-sm font-bold text-slate-700 ml-1">Your Name</label>
                   <input
                     type="text"
-                    placeholder="John Doe"
+                    placeholder="Name"
                     className="w-full bg-slate-50 border border-slate-200 rounded-xl px-5 py-4 focus:outline-none focus:ring-4 focus:ring-blue-500/10 focus:border-blue-500 transition-all"
                   />
                 </div>
@@ -94,7 +94,7 @@ export default function Contact() {
                   <label className="text-sm font-bold text-slate-700 ml-1">Email Address</label>
                   <input
                     type="email"
-                    placeholder="john@company.com"
+                    placeholder="name@company.com"
                     className="w-full bg-slate-50 border border-slate-200 rounded-xl px-5 py-4 focus:outline-none focus:ring-4 focus:ring-blue-500/10 focus:border-blue-500 transition-all"
                   />
                 </div>

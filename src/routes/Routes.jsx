@@ -11,6 +11,9 @@ import Contact from "../pages/Company/Contact";
 import NotFound from "../pages/Notfound";
 import Solutions from "../pages/Solutions/Solutions";
 import Resources from "../pages/Resources/Resources";
+import PrivacyPolicy from "../pages/Legal/PrivacyPolicy";
+import TermsConditions from "../pages/Legal/TermsConditions";
+import EdulineAppPolicy from "../pages/Legal/EdulineAppPolicy";
 
 export default function AppRoutes() {
     return (
@@ -32,6 +35,9 @@ export default function AppRoutes() {
                     <Route path="/get-started" element={<Contact />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/login" element={<Contact />} />
+                    <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                    <Route path="/terms-conditions" element={<TermsConditions />} />
+                    <Route path="/my-learning/privacy-policy" element={<EdulineAppPolicy />} />
                 </Route>
 
                 <Route path="*" element={<NotFound />} />

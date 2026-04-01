@@ -27,9 +27,9 @@ export default function Navbar() {
 
                     {/* Desktop Actions */}
                     <div className="hidden md:flex items-center gap-4">
-                        <Link to="/login" className="text-sm font-medium hover:text-blue-600">
+                        {/* <Link to="/login" className="text-sm font-medium hover:text-blue-600">
                             Login
-                        </Link>
+                        </Link> */}
                         <Link
                             to="/get-started"
                             className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700"
@@ -63,9 +63,9 @@ export default function Navbar() {
 
                         <hr />
 
-                        <Link to="/login" onClick={() => setMenuOpen(false)}>
+                        {/* <Link to="/login" onClick={() => setMenuOpen(false)}>
                             Login
-                        </Link>
+                        </Link> */}
 
                         <Link
                             to="/get-started"
