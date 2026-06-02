@@ -22,7 +22,7 @@ export default function Home() {
             <BackedBy />
             <TechStack />
             <Trust />
-            <Reviews />
+            {/* <Reviews /> */}
             <CTA />
         </div>
     )

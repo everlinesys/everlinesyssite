@@ -1,80 +1,326 @@
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 
 export default function HeroDev() {
-    return (
-        <section
-            className="relative pt-24 pb-16 overflow-hidden flex flex-col items-center bg-cover bg-center"
-            style={{
-                backgroundImage:
-                    "url('/bg.jpg')",
-            }}
-        >
+  return (
+    <section className="bg-[#f4f4f0] py-20 lg:py-28 border-b-4 border-slate-900 overflow-hidden">
 
-            {/* Overlay for readability */}
-            <div className="absolute inset-0 bg-white/45 backdrop-blur-sm"></div>
+      <div className="max-w-7xl mx-auto px-6">
 
-            {/* Content */}
-            <div className="relative max-w-4xl px-4 sm:px-6 text-center">
+        {/* Header */}
 
-                {/* Trust badge */}
-                <div className="inline-flex items-center px-4 py-1.5 bg-slate-100 text-slate-700 text-sm rounded-full">
-                    4+ Years of Digital Excellence
-                </div>
+        <div className="grid lg:grid-cols-12 gap-6 items-end border-b-4 border-slate-900 pb-10">
 
-                <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 tracking-tight">
-                    Digital Excellence
-                    <br />
-                    for Growing Businesses
-                </h1>
+          <div className="lg:col-span-8">
 
-                <p className="mt-6 text-lg text-slate-600 max-w-xl mx-auto">
-                    Drive your business forward with high-performance websites,
-                    SEO strategies, and scalable digital systems built for
-                    reliability, speed, and long-term growth.
-                </p>
+            <span
+              className="
+                inline-block
+                px-3
+                py-1
+                bg-emerald-400
+                border-2
+                border-slate-900
+                text-slate-900
+                font-black
+                text-xs
+                uppercase
+                tracking-widest
+                shadow-[2px_2px_0_0_rgba(15,23,42,1)]
+                -rotate-1
+                mb-4
+              "
+            >
+              // Everline Systems
+            </span>
 
-                {/* Buttons */}
-                <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+            <h1
+              className="
+                text-5xl
+                sm:text-7xl
+                lg:text-8xl
+                font-black
+                text-slate-900
+                uppercase
+                tracking-tighter
+                leading-none
+              "
+            >
+              Build Systems
+              <br />
 
-                    <Link
-                        to="/contact"
-                        className="px-6 py-3 bg-blue-700 text-white rounded-lg font-semibold hover:bg-blue-800 transition"
-                    style={{color:"white"}}>
-                        Start a Project
-                    </Link>
+              <span
+                className="
+                  bg-slate-900
+                  text-white
+                  px-3
+                  py-1
+                  inline-block
+                  rotate-1
+                  mt-2
+                  border-2
+                  border-slate-900
+                "
+              >
+                That Last
+              </span>
+            </h1>
 
-                    <Link
-                        to="/products"
-                        className="px-6 py-3 bg-white border border-slate-200 text-slate-700 rounded-lg font-semibold hover:bg-slate-50 transition"
-                    >
-                        Our Products
-                    </Link>
+          </div>
 
-                </div>
+          <div className="lg:col-span-4">
 
-                {/* Trust metrics */}
-                <div className="mt-10 grid grid-cols-3 gap-6 text-center max-w-md mx-auto">
+            <p
+              className="
+                text-slate-800
+                font-bold
+                text-sm
+                sm:text-base
+                border-l-4
+                border-slate-900
+                pl-4
+              "
+            >
+              Websites, software platforms and digital products
+              engineered for reliability, growth and long-term
+              business success.
+            </p>
 
-                    <div>
-                        <p className="text-2xl font-bold text-slate-900">4+</p>
-                        <p className="text-sm text-slate-500">Years Experience</p>
-                    </div>
+          </div>
 
-                    <div>
-                        <p className="text-2xl font-bold text-slate-900">50+</p>
-                        <p className="text-sm text-slate-500">Projects Built</p>
-                    </div>
+        </div>
 
-                    <div>
-                        <p className="text-2xl font-bold text-slate-900">24/7</p>
-                        <p className="text-sm text-slate-500">Support</p>
-                    </div>
+        {/* Content */}
 
-                </div>
+        <div className="grid lg:grid-cols-12 gap-8 mt-10">
+
+          {/* Main Card */}
+
+          <div
+            className="
+              lg:col-span-8
+              bg-white
+              border-4
+              border-slate-900
+              p-6
+              lg:p-10
+              shadow-[8px_8px_0_0_rgba(52,211,153,1)]
+            "
+          >
+
+            <div className="flex flex-wrap gap-3 mb-8">
+
+              <div className="px-3 py-1 border-2 border-slate-900 bg-emerald-400 text-xs font-black uppercase">
+                Build Once
+              </div>
+
+              <div className="px-3 py-1 border-2 border-slate-900 bg-white text-xs font-black uppercase">
+                Run Forever
+              </div>
+
+              <div className="px-3 py-1 border-2 border-slate-900 bg-slate-900 text-white text-xs font-black uppercase">
+                Since 2022
+              </div>
 
             </div>
 
-        </section>
-    );
+            <h2
+              className="
+                text-3xl
+                sm:text-4xl
+                lg:text-5xl
+                font-black
+                uppercase
+                tracking-tight
+                text-slate-900
+              "
+            >
+              Products.
+              <br />
+              Platforms.
+              <br />
+              Automation.
+            </h2>
+
+            <p
+              className="
+                mt-6
+                text-slate-700
+                text-base
+                sm:text-lg
+                font-bold
+                max-w-2xl
+              "
+            >
+              We help businesses and educators launch digital
+              products faster using scalable software, modern
+              websites and intelligent automation systems.
+            </p>
+
+            <div className="mt-10 flex flex-col sm:flex-row gap-4">
+
+              <Link
+                to="/contact"
+                className="
+                  border-4
+                  border-slate-900
+                  bg-slate-900
+                  text-white
+                  px-6
+                  py-4
+                  font-black
+                  uppercase
+                  text-center
+                  shadow-[4px_4px_0_0_rgba(52,211,153,1)]
+                "
+                style={{ color: "white" }}
+              >
+                Start Project
+              </Link>
+
+              <Link
+                to="/products"
+                className="
+                  border-4
+                  border-slate-900
+                  bg-emerald-400
+                  text-slate-900
+                  px-6
+                  py-4
+                  font-black
+                  uppercase
+                  text-center
+                  shadow-[4px_4px_0_0_rgba(15,23,42,1)]
+                "
+              >
+                View Products
+              </Link>
+
+            </div>
+
+          </div>
+
+          {/* Right Panel */}
+
+          <div
+            className="
+              lg:col-span-4
+              bg-emerald-400
+              border-4
+              border-slate-900
+              p-6
+              shadow-[8px_8px_0_0_rgba(15,23,42,1)]
+            "
+          >
+
+            <div className="text-xs uppercase font-black tracking-widest">
+              Featured Product
+            </div>
+
+            <h3
+              className="
+                mt-4
+                text-4xl
+                font-black
+                uppercase
+                tracking-tight
+              "
+            >
+              Eduline
+            </h3>
+
+            <p className="mt-4 font-bold text-slate-800">
+              Launch your own branded academy with courses,
+              certificates, exams, payments and student
+              management.
+            </p>
+
+            <div className="mt-8 border-t-2 border-slate-900 pt-4">
+
+              <div className="flex justify-between font-black text-sm uppercase">
+                <span>Platform Status</span>
+                <span>Online</span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* Stats */}
+
+        <div className="grid md:grid-cols-3 gap-8 mt-8">
+
+          <div
+            className="
+              bg-white
+              border-4
+              border-slate-900
+              p-6
+              shadow-[8px_8px_0_0_rgba(52,211,153,1)]
+            "
+          >
+            <div className="text-xs font-black uppercase">
+              Experience
+            </div>
+
+            <div className="text-5xl font-black mt-3">
+              4+
+            </div>
+
+            <p className="mt-2 font-bold text-slate-700">
+              Years Building Platforms
+            </p>
+          </div>
+
+          <div
+            className="
+              bg-emerald-400
+              border-4
+              border-slate-900
+              p-6
+              shadow-[8px_8px_0_0_rgba(15,23,42,1)]
+            "
+          >
+            <div className="text-xs font-black uppercase">
+              Projects
+            </div>
+
+            <div className="text-5xl font-black mt-3">
+              50+
+            </div>
+
+            <p className="mt-2 font-bold">
+              Delivered Successfully
+            </p>
+          </div>
+
+          <div
+            className="
+              bg-slate-900
+              text-white
+              border-4
+              border-slate-900
+              p-6
+              shadow-[8px_8px_0_0_rgba(52,211,153,1)]
+            "
+          >
+            <div className="text-xs font-black uppercase text-emerald-300">
+              Support
+            </div>
+
+            <div className="text-5xl font-black mt-3">
+              24/7
+            </div>
+
+            <p className="mt-2 font-bold text-slate-300">
+              Technical Assistance
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  );
 }

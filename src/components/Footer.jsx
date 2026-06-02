@@ -2,101 +2,291 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300">
-      <div className="max-w-7xl mx-auto px-6 py-14">
-        
+    <footer className="relative bg-[#f7faf8] overflow-hidden border-t-4 border-slate-950 text-slate-900">
+
+      {/* Grid */}
+      <div
+        className="absolute inset-0 opacity-40"
+        style={{
+          backgroundImage: `
+            linear-gradient(to right, rgba(16,185,129,.08) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(16,185,129,.08) 1px, transparent 1px)
+          `,
+          backgroundSize: "40px 40px",
+        }}
+      />
+
+      {/* Glow */}
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[900px] h-[500px] bg-emerald-300/20 blur-3xl rounded-full" />
+
+      <div className="relative max-w-7xl mx-auto px-6 py-20">
+
         {/* Top Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
-          
+
+        <div className="grid lg:grid-cols-12 gap-6">
+
           {/* Brand */}
-          <div className="lg:col-span-2">
-            <h2 className="text-2xl font-bold text-white mb-4 tracking-wide">
-              EVERLINESYS
+
+          <div className="
+            lg:col-span-5
+            bg-slate-950
+            text-white
+            border-4
+            border-slate-950
+            p-8
+            shadow-[12px_12px_0_0_rgba(16,185,129,1)]
+          ">
+
+            <div className="
+              inline-flex
+              items-center
+              px-3
+              py-2
+              bg-emerald-400
+              text-slate-950
+              font-black
+              text-xs
+              uppercase
+              tracking-widest
+              mb-6
+            ">
+              Everline Systems
+            </div>
+
+            <h2 className="
+              text-5xl
+              md:text-6xl
+              font-black
+              leading-none
+            ">
+              BUILD.
+              <br />
+              ONCE.
+              <br />
+              <span className="text-emerald-400">
+                RUN FOREVER.
+              </span>
             </h2>
-            <p className="text-sm leading-relaxed text-gray-400 max-w-md">
-              Building powerful SaaS tools for educators, businesses,
-              and creators worldwide.
+
+            <p className="
+              mt-8
+              text-slate-300
+              text-lg
+              max-w-md
+            ">
+              Building products, platforms and systems
+              that scale with businesses, educators and creators.
             </p>
+
           </div>
 
-          {/* Products */}
-          <div className="space-y-3">
-            <h4 className="text-white font-semibold mb-4">Products</h4>
-            <div className="flex flex-col space-y-2 text-sm">
-              <Link to="/products/eduline" className="hover:text-white transition">
-                Eduline
-              </Link>
-              <Link to="/products/crm" className="hover:text-white transition">
-                WhatsApp CRM
-              </Link>
-              <Link to="/products/booking" className="hover:text-white transition">
-                Booking System
-              </Link>
-            </div>
-          </div>
+          {/* Links */}
 
-          {/* Solutions */}
-          <div className="space-y-3">
-            <h4 className="text-white font-semibold mb-4">Solutions</h4>
-            <div className="flex flex-col space-y-2 text-sm">
-              <Link to="/solutions/education" className="hover:text-white transition">
-                For Educators
-              </Link>
-              <Link to="/solutions/business" className="hover:text-white transition">
-                For Businesses
-              </Link>
-              <Link to="/solutions/creators" className="hover:text-white transition">
-                For Creators
-              </Link>
-            </div>
-          </div>
+          <div className="
+            lg:col-span-7
+            grid
+            md:grid-cols-4
+            gap-6
+          ">
 
-          {/* Resources */}
-          <div className="space-y-3">
-            <h4 className="text-white font-semibold mb-4">Resources</h4>
-            <div className="flex flex-col space-y-2 text-sm">
-              <Link to="/blog" className="hover:text-white transition">
-                Blog
-              </Link>
-              <Link to="/docs" className="hover:text-white transition">
-                Documentation
-              </Link>
-              <Link to="/support" className="hover:text-white transition">
-                Support
-              </Link>
-            </div>
-          </div>
+            <div className="
+              bg-white
+              border-4
+              border-slate-950
+              p-6
+              shadow-[8px_8px_0_0_rgba(15,23,42,1)]
+            ">
+              <h4 className="
+                text-xs
+                uppercase
+                font-black
+                mb-5
+              ">
+                Products
+              </h4>
 
-          {/* Company */}
-          <div className="space-y-3">
-            <h4 className="text-white font-semibold mb-4">Company</h4>
-            <div className="flex flex-col space-y-2 text-sm">
-              <Link to="/about" className="hover:text-white transition">
-                About
-              </Link>
-              <Link to="/careers" className="hover:text-white transition">
-                Careers
-              </Link>
-              <Link to="/contact" className="hover:text-white transition">
-                Contact
-              </Link>
+              <div className="space-y-3 font-bold">
+
+                <Link to="/products/eduline" className="block hover:text-emerald-600">
+                  Eduline
+                </Link>
+
+                <Link to="/products/crm" className="block hover:text-emerald-600">
+                  WhatsApp CRM
+                </Link>
+
+                <Link to="/products/booking" className="block hover:text-emerald-600">
+                  Booking System
+                </Link>
+
+              </div>
             </div>
+
+            <div className="
+              bg-white
+              border-4
+              border-slate-950
+              p-6
+              shadow-[8px_8px_0_0_rgba(15,23,42,1)]
+            ">
+              <h4 className="
+                text-xs
+                uppercase
+                font-black
+                mb-5
+              ">
+                Solutions
+              </h4>
+
+              <div className="space-y-3 font-bold">
+
+                <Link to="/solutions/education" className="block hover:text-emerald-600">
+                  Educators
+                </Link>
+
+                <Link to="/solutions/business" className="block hover:text-emerald-600">
+                  Businesses
+                </Link>
+
+                <Link to="/solutions/creators" className="block hover:text-emerald-600">
+                  Creators
+                </Link>
+
+              </div>
+            </div>
+
+            <div className="
+              bg-white
+              border-4
+              border-slate-950
+              p-6
+              shadow-[8px_8px_0_0_rgba(15,23,42,1)]
+            ">
+              <h4 className="
+                text-xs
+                uppercase
+                font-black
+                mb-5
+              ">
+                Resources
+              </h4>
+
+              <div className="space-y-3 font-bold">
+
+                <Link to="/blog" className="block hover:text-emerald-600">
+                  Blog
+                </Link>
+
+                <Link to="/docs" className="block hover:text-emerald-600">
+                  Documentation
+                </Link>
+
+                <Link to="/support" className="block hover:text-emerald-600">
+                  Support
+                </Link>
+
+              </div>
+            </div>
+
+            <div className="
+              bg-emerald-400
+              border-4
+              border-slate-950
+              p-6
+              shadow-[8px_8px_0_0_rgba(15,23,42,1)]
+            ">
+              <h4 className="
+                text-xs
+                uppercase
+                font-black
+                mb-5
+              ">
+                Company
+              </h4>
+
+              <div className="space-y-3 font-bold">
+
+                <Link to="/about" className="block">
+                  About
+                </Link>
+
+                <Link to="/contact" className="block">
+                  Contact
+                </Link>
+
+                <Link to="/careers" className="block">
+                  Careers
+                </Link>
+
+              </div>
+
+              <div className="
+                mt-8
+                text-xs
+                uppercase
+                font-black
+              ">
+                System Online ●
+              </div>
+
+            </div>
+
           </div>
 
         </div>
 
-        {/* Bottom Section */}
-        <div className="border-t border-gray-800 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-          <p>© {new Date().getFullYear()} Everline Systems</p>
+        {/* Bottom */}
 
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <Link to="/privacy-policy" className="hover:text-white transition">
-              Privacy
-            </Link>
-            <Link to="/terms-conditions" className="hover:text-white transition">
-              Terms
-            </Link>
+        <div className="
+          mt-12
+          bg-white
+          border-4
+          border-slate-950
+          p-6
+          shadow-[8px_8px_0_0_rgba(15,23,42,1)]
+        ">
+
+          <div className="
+            flex
+            flex-col
+            md:flex-row
+            justify-between
+            items-center
+            gap-4
+          ">
+
+            <div className="
+              font-black
+              uppercase
+              text-sm
+            ">
+              © {new Date().getFullYear()} Everline Systems
+            </div>
+
+            <div className="
+              flex
+              gap-6
+              font-bold
+            ">
+
+              <Link
+                to="/policy"
+                className="hover:text-emerald-600"
+              >
+                Privacy
+              </Link>
+
+              <Link
+                to="/terms-conditions"
+                className="hover:text-emerald-600"
+              >
+                Terms
+              </Link>
+
+            </div>
+
           </div>
+
         </div>
 
       </div>

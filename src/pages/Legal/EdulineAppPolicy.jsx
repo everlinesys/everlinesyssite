@@ -1,127 +1,299 @@
 import React from "react";
+import { ShieldCheck, Lock, Database, Eye, FileText, Mail } from "lucide-react";
 
-function Section({ title, children }) {
+function Section({ number, title, children }) {
   return (
-    <div className="mb-8">
-      <h2 className="text-xl font-semibold mb-2">{title}</h2>
-      <div className="text-gray-700 leading-relaxed">{children}</div>
+    <div className="bg-white border-4 border-slate-950 p-8 shadow-[8px_8px_0_0_rgba(15,23,42,1)]">
+      <div className="text-xs uppercase font-black tracking-widest text-emerald-600">
+        Section {number}
+      </div>
+
+      <h2 className="mt-3 text-3xl font-black text-slate-950">
+        {title}
+      </h2>
+
+      <div className="mt-6 text-slate-700 leading-relaxed space-y-4">
+        {children}
+      </div>
     </div>
   );
 }
 
 export default function EdulineAppPolicy() {
   return (
-    <div className="min-h-screen bg-white text-gray-800 px-6 py-10 md:px-20">
-      <div className="max-w-4xl mx-auto">
-        <h1 className="text-3xl font-bold mb-4">Privacy Policy</h1>
+    <section className="relative min-h-screen bg-[#f7faf8] overflow-hidden py-24">
 
-        <p className="text-sm text-gray-500 mb-4">
-          Effective Date: 01/01/2024
-        </p>
+      {/* Grid */}
+      <div
+        className="absolute inset-0 opacity-50"
+        style={{
+          backgroundImage: `
+            linear-gradient(to right, rgba(16,185,129,.08) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(16,185,129,.08) 1px, transparent 1px)
+          `,
+          backgroundSize: "40px 40px",
+        }}
+      />
 
-        <p className="mb-8">
-          This Privacy Policy applies to the mobile application <strong>MyLearning</strong>,
-          operated by <strong>Everline Systems</strong>. MyLearning is part of the Eduline
-          platform and provides online learning and course access services.
-        </p>
+      {/* Glow */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[700px] bg-emerald-300/20 blur-3xl rounded-full" />
 
-        <Section title="1. Information We Collect">
-          <p className="mb-3 font-medium">a. Personal Information</p>
-          <ul className="list-disc pl-6 mb-4">
-            <li>Name</li>
-            <li>Email address</li>
-            <li>Phone number</li>
-            <li>Account login details</li>
-          </ul>
+      <div className="relative max-w-7xl mx-auto px-6">
 
-          <p className="mb-3 font-medium">b. Usage Data</p>
-          <ul className="list-disc pl-6 mb-4">
-            <li>App usage behavior</li>
-            <li>Pages visited</li>
-            <li>Device information (model, OS version)</li>
-          </ul>
+        {/* Hero */}
 
-          <p className="mb-3 font-medium">c. Payment Information</p>
-          <p>
-            Payments are processed through third-party gateways (e.g., Razorpay,
-            Stripe). We do not store your card or banking details.
+        <div className="grid lg:grid-cols-12 gap-6 mb-10">
+
+          <div className="
+            lg:col-span-8
+            bg-slate-950
+            text-white
+            border-4
+            border-slate-950
+            p-10
+            shadow-[12px_12px_0_0_rgba(16,185,129,1)]
+          ">
+
+            <div className="
+              inline-flex
+              items-center
+              gap-2
+              px-3
+              py-2
+              bg-emerald-400
+              text-slate-950
+              font-black
+              uppercase
+              text-xs
+            ">
+              <ShieldCheck size={14} />
+              Privacy Policy
+            </div>
+
+            <h1 className="
+              mt-8
+              text-5xl
+              md:text-7xl
+              font-black
+              leading-none
+            ">
+              YOUR DATA.
+              <br />
+              YOUR RIGHTS.
+            </h1>
+
+            <p className="
+              mt-8
+              text-xl
+              text-slate-300
+              max-w-2xl
+            ">
+              MyLearning by Eduline is committed to protecting
+              your privacy and maintaining the security of your data.
+            </p>
+
+          </div>
+
+          <div className="
+            lg:col-span-4
+            bg-emerald-400
+            border-4
+            border-slate-950
+            p-8
+            shadow-[12px_12px_0_0_rgba(15,23,42,1)]
+          ">
+
+            <div className="text-xs uppercase font-black">
+              Effective Date
+            </div>
+
+            <div className="mt-4 text-5xl font-black">
+              2024
+            </div>
+
+            <div className="mt-6 text-lg font-bold">
+              Operated by
+              <br />
+              Everline Systems
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* Sections */}
+
+        <div className="grid gap-6">
+
+          <Section number="01" title="Information We Collect">
+
+            <div>
+              <h4 className="font-black mb-2">Personal Information</h4>
+              <ul className="list-disc pl-6">
+                <li>Name</li>
+                <li>Email Address</li>
+                <li>Phone Number</li>
+                <li>Account Credentials</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-black mb-2">Usage Data</h4>
+              <ul className="list-disc pl-6">
+                <li>Course Activity</li>
+                <li>Pages Visited</li>
+                <li>Device Information</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-black mb-2">Payment Information</h4>
+              <p>
+                Payments are processed through third-party gateways.
+                We do not store card or banking details.
+              </p>
+            </div>
+
+          </Section>
+
+          <Section number="02" title="How We Use Information">
+
+            <ul className="list-disc pl-6">
+              <li>Create and manage accounts</li>
+              <li>Provide course access</li>
+              <li>Process transactions</li>
+              <li>Improve platform performance</li>
+              <li>Send important updates and notifications</li>
+            </ul>
+
+          </Section>
+
+          <Section number="03" title="Data Sharing">
+
+            <p>
+              We do not sell personal information. Data may be
+              shared with infrastructure providers, payment processors,
+              analytics services, and legal authorities when required.
+            </p>
+
+          </Section>
+
+          <Section number="04" title="Security">
+
+            <div className="flex gap-3 items-center">
+              <Lock size={20} />
+              <span>
+                We implement industry-standard security measures
+                to protect your information.
+              </span>
+            </div>
+
+          </Section>
+
+          <Section number="05" title="Cookies & Tracking">
+
+            <p>
+              Cookies and similar technologies may be used to
+              improve user experience and platform performance.
+            </p>
+
+          </Section>
+
+          <Section number="06" title="Third-Party Services">
+
+            <div className="flex gap-3 items-center">
+              <Database size={20} />
+              <span>
+                Analytics tools, hosting providers, payment gateways,
+                and communication services may process limited data.
+              </span>
+            </div>
+
+          </Section>
+
+          <Section number="07" title="Children's Privacy">
+
+            <p>
+              We do not knowingly collect personal information
+              from children under 13 years of age.
+            </p>
+
+          </Section>
+
+          <Section number="08" title="Your Rights">
+
+            <div className="space-y-2">
+              <div className="flex gap-3">
+                <Eye size={18} />
+                Access your information
+              </div>
+
+              <div className="flex gap-3">
+                <FileText size={18} />
+                Request corrections or deletion
+              </div>
+
+              <div className="flex gap-3">
+                <ShieldCheck size={18} />
+                Withdraw consent where applicable
+              </div>
+            </div>
+
+          </Section>
+
+          <Section number="09" title="Policy Updates">
+
+            <p>
+              This policy may be updated periodically.
+              Updates will be published on this page.
+            </p>
+
+          </Section>
+
+          <Section number="10" title="Contact">
+
+            <div className="space-y-2">
+
+              <div className="flex gap-3 items-center">
+                <Mail size={18} />
+                contact@everlinesys.com
+              </div>
+
+              <p>
+                Everline Systems
+                <br />
+                Kakkanad, Kochi
+                <br />
+                Kerala, India
+              </p>
+
+            </div>
+
+          </Section>
+
+        </div>
+
+        {/* Footer Note */}
+
+        <div className="
+          mt-10
+          bg-slate-950
+          text-white
+          border-4
+          border-slate-950
+          p-8
+          shadow-[8px_8px_0_0_rgba(16,185,129,1)]
+        ">
+          <div className="text-emerald-400 text-xs uppercase font-black">
+            Agreement
+          </div>
+
+          <p className="mt-4 text-xl font-bold">
+            By using MyLearning, you agree to this Privacy Policy.
           </p>
-        </Section>
+        </div>
 
-        <Section title="2. How We Use Your Information">
-          <ul className="list-disc pl-6">
-            <li>Provide and improve services</li>
-            <li>Create and manage accounts</li>
-            <li>Enable course access</li>
-            <li>Process transactions</li>
-            <li>Send updates and notifications</li>
-          </ul>
-        </Section>
-
-        <Section title="3. Data Sharing and Disclosure">
-          <p>
-            We do not sell your personal data. We may share data with service
-            providers (hosting, analytics, payment gateways) or when required by
-            law.
-          </p>
-        </Section>
-
-        <Section title="4. Data Security">
-          <p>
-            We implement appropriate security measures. However, no internet
-            transmission is completely secure.
-          </p>
-        </Section>
-
-        <Section title="5. Cookies and Tracking">
-          <p>
-            We may use cookies or similar technologies to improve user
-            experience and analyze performance.
-          </p>
-        </Section>
-
-        <Section title="6. Third-Party Services">
-          <p>
-            Our app may use third-party services such as analytics tools and
-            payment gateways, which have their own privacy policies.
-          </p>
-        </Section>
-
-        <Section title="7. Children’s Privacy">
-          <p>
-            We do not knowingly collect data from children under 13. If found, it
-            will be deleted.
-          </p>
-        </Section>
-
-        <Section title="8. Your Rights">
-          <ul className="list-disc pl-6">
-            <li>Access your data</li>
-            <li>Request correction or deletion</li>
-            <li>Withdraw consent</li>
-          </ul>
-          <p className="mt-2">
-            Contact us at: <strong>contact@everlinesys.com</strong>
-          </p>
-        </Section>
-
-        <Section title="9. Changes to This Policy">
-          <p>
-            We may update this policy from time to time. Changes will be posted
-            on this page.
-          </p>
-        </Section>
-
-        <Section title="10. Contact Us">
-          <p>Email: contact@everlinesys.com</p>
-          <p>Company: Everline Systems</p>
-          <p>Address: Kakkanad, Kochi, Kerala, India</p>
-        </Section>
-
-        <p className="mt-10 text-sm text-gray-500">
-          By using MyLearning, you agree to this Privacy Policy.
-        </p>
       </div>
-    </div>
+    </section>
   );
 }

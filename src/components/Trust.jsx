@@ -1,115 +1,306 @@
-import { ShieldCheck } from "lucide-react";
+import {
+  ShieldCheck,
+  GraduationCap,
+  Building2,
+  Briefcase,
+  Languages,
+  Award,
+} from "lucide-react";
 
 export default function Trust() {
   const sectors = [
     {
+      icon: GraduationCap,
       title: "Coaching Institutes",
-      desc: "Streamline batch management, automate attendance, and boost student engagement through insights.",
-      img: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1200",
+      desc: "Manage batches, attendance, exams and student progress from one platform.",
     },
     {
+      icon: Award,
       title: "Digital Educators",
-      desc: "Scale globally with secure content delivery, integrated payments, and automation.",
-      img: "https://images.unsplash.com/photo-1588702547923-7093a6c3ba33?q=80&w=1200",
+      desc: "Sell courses globally with secure content delivery and payments.",
     },
     {
-      title: "Skill Training Centers",
-      desc: "Deliver structured certification programs with performance tracking.",
-      img: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200",
+      icon: Building2,
+      title: "Training Centers",
+      desc: "Deliver certification programs with structured learning paths.",
     },
     {
+      icon: Briefcase,
       title: "Corporate Academies",
-      desc: "Enable onboarding, compliance training, and workforce development.",
-      img: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200",
+      desc: "Enable onboarding, compliance and workforce development.",
     },
     {
+      icon: ShieldCheck,
       title: "Higher Education",
-      desc: "Enterprise-grade security with seamless LMS integrations.",
-      img: "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?q=80&w=1200",
+      desc: "Enterprise-grade security and scalable learning infrastructure.",
     },
     {
-      title: "Language & Arts Schools",
-      desc: "Interactive learning with flexible scheduling and virtual classrooms.",
-      img: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1200",
+      icon: Languages,
+      title: "Language Schools",
+      desc: "Flexible scheduling, virtual classrooms and student engagement.",
     },
   ];
 
   return (
-    <section className="bg-slate-50 py-16 sm:py-20 border-t border-slate-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative py-32 bg-[#f7faf8] overflow-hidden text-slate-900">
 
-        {/* ===== HEADER ===== */}
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-12 gap-6">
+      {/* Grid */}
+      <div
+        className="absolute inset-0 opacity-50"
+        style={{
+          backgroundImage: `
+            linear-gradient(to right, rgba(16,185,129,.08) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(16,185,129,.08) 1px, transparent 1px)
+          `,
+          backgroundSize: "40px 40px",
+        }}
+      />
 
-          <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-bold uppercase tracking-wider mb-4">
-              <ShieldCheck size={14} />
-              Enterprise Grade Trust
-            </div>
+      {/* Glow */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[700px] bg-emerald-300/20 blur-3xl rounded-full" />
 
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight">
-              Powering the Future of
-              <br />
-              <span className="text-blue-600">Global Education</span>
-            </h2>
+      <div className="relative max-w-7xl mx-auto px-6">
+
+        {/* Header */}
+
+        <div className="mb-20">
+
+          <div className="
+            inline-flex
+            items-center
+            gap-2
+            px-4
+            py-2
+            bg-white
+            border-2
+            border-slate-950
+            shadow-[4px_4px_0_0_rgba(15,23,42,1)]
+            text-xs
+            uppercase
+            tracking-widest
+            font-black
+          ">
+            <ShieldCheck size={14} />
+            Enterprise Trust
           </div>
 
-          <p className="text-slate-600 text-base lg:max-w-xs border-l-2 border-blue-600 pl-4 py-2">
-            Trusted by organizations from boutique coaching centers to large corporate universities.
+          <h2 className="
+            mt-8
+            text-5xl
+            md:text-7xl
+            font-black
+            tracking-tight
+            text-slate-950
+            leading-none
+          ">
+            POWERING
+            <br />
+            MODERN
+            <br />
+            <span className="text-emerald-600">
+              EDUCATION.
+            </span>
+          </h2>
+
+          <p className="
+            mt-8
+            max-w-3xl
+            text-xl
+            text-slate-600
+          ">
+            Built for educators, institutions, academies and
+            organizations delivering learning at scale.
           </p>
+
         </div>
 
-        {/* ===== SECTORS GRID ===== */}
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 mb-16">
-          {sectors.map((sector, idx) => (
-            <div
-              key={idx}
-              className="group bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-blue-300 hover:shadow-xl transition"
-            >
-              <div className="h-44 overflow-hidden">
-                <img
-                  src={sector.img}
-                  alt={sector.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                />
+        {/* Sectors */}
+
+        <div className="grid lg:grid-cols-12 gap-6">
+
+          {/* Large Hero Card */}
+
+          <div className="
+            lg:col-span-5
+            bg-slate-950
+            text-white
+            border-4
+            border-slate-950
+            p-10
+            shadow-[12px_12px_0_0_rgba(16,185,129,1)]
+          ">
+
+            <div className="
+              text-xs
+              uppercase
+              tracking-widest
+              font-black
+              text-emerald-400
+            ">
+              Trusted Platform
+            </div>
+
+            <h3 className="
+              mt-6
+              text-5xl
+              font-black
+              leading-none
+            ">
+              BUILT FOR
+              REAL
+              LEARNING.
+            </h3>
+
+            <p className="
+              mt-8
+              text-slate-300
+              text-lg
+            ">
+              From coaching centers to enterprise academies,
+              Eduline adapts to every stage of educational growth.
+            </p>
+
+            <div className="
+              mt-10
+              border
+              border-white/10
+              bg-white/5
+              p-6
+            ">
+              <div className="text-emerald-400 text-sm font-black uppercase">
+                Mission
               </div>
 
-              <div className="p-5 sm:p-6">
-                <h3 className="text-lg font-bold text-slate-900 mb-2 group-hover:text-blue-600">
-                  {sector.title}
-                </h3>
-
-                <p className="text-slate-600 text-sm leading-relaxed">
-                  {sector.desc}
-                </p>
+              <div className="mt-3 text-2xl font-black">
+                Make digital education
+                accessible, scalable
+                and profitable.
               </div>
             </div>
-          ))}
+
+          </div>
+
+          {/* Sector Cards */}
+
+          <div className="lg:col-span-7 grid md:grid-cols-2 gap-6">
+
+            {sectors.map((sector) => {
+              const Icon = sector.icon;
+
+              return (
+                <div
+                  key={sector.title}
+                  className="
+                    bg-white
+                    border-4
+                    border-slate-950
+                    p-6
+                    shadow-[8px_8px_0_0_rgba(15,23,42,1)]
+                    hover:bg-emerald-400
+                    transition-all
+                  "
+                >
+                  <Icon
+                    size={32}
+                    className="mb-5"
+                  />
+
+                  <h3 className="
+                    text-xl
+                    font-black
+                    mb-3
+                  ">
+                    {sector.title}
+                  </h3>
+
+                  <p className="
+                    text-slate-700
+                    font-medium
+                  ">
+                    {sector.desc}
+                  </p>
+                </div>
+              );
+            })}
+
+          </div>
+
         </div>
 
-        {/* ===== TRUST STATS ===== */}
-        <div className="bg-blue-600 rounded-3xl p-8 sm:p-12 text-white">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div>
-              <div className="text-2xl sm:text-3xl font-black mb-1">99.9%</div>
-              <p className="text-blue-100 text-xs sm:text-sm">Uptime SLA</p>
+        {/* Stats */}
+
+        <div className="
+          mt-12
+          grid
+          md:grid-cols-4
+          gap-6
+        ">
+
+          <div className="
+            bg-white
+            border-4
+            border-slate-950
+            p-8
+            shadow-[8px_8px_0_0_rgba(15,23,42,1)]
+          ">
+            <div className="text-xs uppercase font-black">
+              Uptime
             </div>
 
-            <div>
-              <div className="text-2xl sm:text-3xl font-black mb-1">50k+</div>
-              <p className="text-blue-100 text-xs sm:text-sm">Daily Learners</p>
-            </div>
-
-            <div>
-              <div className="text-2xl sm:text-3xl font-black mb-1">24/7</div>
-              <p className="text-blue-100 text-xs sm:text-sm">Expert Support</p>
-            </div>
-
-            <div>
-              <div className="text-2xl sm:text-3xl font-black mb-1">ISO</div>
-              <p className="text-blue-100 text-xs sm:text-sm">Certified Security</p>
+            <div className="mt-4 text-6xl font-black">
+              99.9%
             </div>
           </div>
+
+          <div className="
+            bg-emerald-400
+            border-4
+            border-slate-950
+            p-8
+            shadow-[8px_8px_0_0_rgba(15,23,42,1)]
+          ">
+            <div className="text-xs uppercase font-black">
+              Learners
+            </div>
+
+            <div className="mt-4 text-6xl font-black">
+              50K+
+            </div>
+          </div>
+
+          <div className="
+            bg-white
+            border-4
+            border-slate-950
+            p-8
+            shadow-[8px_8px_0_0_rgba(15,23,42,1)]
+          ">
+            <div className="text-xs uppercase font-black">
+              Support
+            </div>
+
+            <div className="mt-4 text-6xl font-black">
+              24/7
+            </div>
+          </div>
+
+          <div className="
+            bg-slate-950
+            text-white
+            border-4
+            border-slate-950
+            p-8
+            shadow-[8px_8px_0_0_rgba(16,185,129,1)]
+          ">
+            <div className="text-xs uppercase font-black text-emerald-400">
+              Security
+            </div>
+
+            <div className="mt-4 text-5xl font-black">
+              Enterprise
+            </div>
+          </div>
+
         </div>
 
       </div>

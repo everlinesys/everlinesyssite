@@ -1,99 +1,340 @@
-import { Rocket, Laptop, CheckCircle2, ArrowRight, Zap, Settings } from "lucide-react";
+import {
+  Rocket,
+  Settings,
+  ArrowRight,
+  CheckCircle2,
+  Cpu,
+  Boxes,
+} from "lucide-react";
 
 export default function Capabilities() {
   return (
-    <section className="relative py-24 bg-white overflow-hidden">
-      
-      {/* Dynamic Angled Background */}
-      <div className="absolute top-0 left-0 w-full h-[500px] bg-blue-600 -skew-y-3 origin-top-left z-0" />
+    <section className="relative py-32 bg-[#f7faf8] overflow-hidden text-slate-900">
 
-      <div className="relative max-w-7xl mx-auto px-6 z-10">
-        
-        {/* Header Section */}
-        <div className="text-center mb-20 pt-10 md:pt-0">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tight">
-            Start with a Product / <span className="text-blue-100">Build a System</span>
+      {/* Grid */}
+      <div
+        className="absolute inset-0 opacity-50"
+        style={{
+          backgroundImage: `
+            linear-gradient(to right, rgba(16,185,129,.08) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(16,185,129,.08) 1px, transparent 1px)
+          `,
+          backgroundSize: "40px 40px",
+        }}
+      />
+
+      {/* Glow */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1200px] h-[800px] bg-emerald-300/20 blur-3xl rounded-full" />
+
+      <div className="relative max-w-7xl mx-auto px-6">
+
+        {/* Header */}
+
+        <div className="mb-20">
+
+          <div className="
+            inline-flex
+            items-center
+            gap-2
+            px-4
+            py-2
+            bg-white
+            border-2
+            border-slate-950
+            font-black
+            uppercase
+            text-xs
+            tracking-widest
+            shadow-[4px_4px_0_0_rgba(15,23,42,1)]
+          ">
+            ● Solutions
+          </div>
+
+          <h2 className="
+            mt-8
+            text-5xl
+            md:text-7xl
+            font-black
+            tracking-tight
+            text-slate-950
+            leading-none
+          ">
+            START WITH
+            <br />
+            A PRODUCT.
+            <br />
+            <span className="text-emerald-600">
+              BUILD A SYSTEM.
+            </span>
           </h2>
-          <p className="text-lg md:text-xl text-blue-50 max-w-3xl mx-auto leading-relaxed">
-            Most teams begin with one of our ready-to-use platforms. 
-            As you grow, we unify your operations into a single intelligent system 
-            tailored to your business.
-          </p>
-        </div>
-
-        <div className="grid lg:grid-cols-2 gap-8 items-stretch">
-          
-          {/* Card 1: READY PRODUCTS */}
-          <div className="group bg-white p-8 md:p-12 rounded-[2.5rem] shadow-2xl border border-slate-100 transition-all duration-300 hover:-translate-y-2">
-            <div className="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 mb-8 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
-              <Rocket size={32} />
-            </div>
-            
-            <h3 className="text-3xl font-bold text-slate-900 mb-6">
-              Launch Faster with Our Products
-            </h3>
-
-            <p className="text-slate-600 text-lg mb-8 leading-relaxed">
-              Deploy proven solutions designed to handle real-world operations—from 
-              education platforms to customer management tools.
-            </p>
-
-            <ul className="space-y-4 mb-10">
-              {[
-                "Eduline — Brand your own learning platform",
-                "WhatsApp CRM — Conversation-driven sales",
-                "Billing & Stock — Operational clarity",
-                "Quick deployment with minimal setup",
-                "Scalable cloud infrastructure"
-              ].map((item, i) => (
-                <li key={i} className="flex items-start gap-3 text-slate-700 font-medium">
-                  <CheckCircle2 className="text-blue-500 mt-1 shrink-0" size={20} />
-                  {item}
-                </li>
-              ))}
-            </ul>
-
-            <button className="flex items-center gap-2 text-blue-600 font-bold text-lg group-hover:gap-4 transition-all">
-              Explore Products <ArrowRight size={20} />
-            </button>
-          </div>
-
-          {/* Card 2: CUSTOM SYSTEMS (Dark Mode) */}
-          <div className="group bg-slate-900 p-8 md:p-12 rounded-[2.5rem] shadow-2xl border border-slate-800 transition-all duration-300 hover:-translate-y-2 text-white">
-            <div className="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center text-white mb-8 group-hover:rotate-12 transition-transform">
-              <Settings size={32} />
-            </div>
-            
-            <h3 className="text-3xl font-bold mb-6">
-              Custom Integrated Systems
-            </h3>
-
-            <p className="text-slate-400 text-lg mb-8 leading-relaxed">
-              When off-the-shelf tools aren’t enough, we build fully integrated 
-              platforms tailored to your specific data and long-term strategy.
-            </p>
-
-            <ul className="space-y-4 mb-10">
-              {[
-                "Business process & architecture design",
-                "Custom automation & workflow solutions",
-                "Websites, apps, and internal tools",
-                "Unified software ecosystem integration",
-                "Digital transformation strategy"
-              ].map((item, i) => (
-                <li key={i} className="flex items-start gap-3 text-slate-300 font-medium">
-                  <Zap className="text-blue-400 mt-1 shrink-0" size={20} />
-                  {item}
-                </li>
-              ))}
-            </ul>
-
-            <button className="flex items-center gap-2 text-blue-400 font-bold text-lg group-hover:gap-4 transition-all">
-              Consult with Experts <ArrowRight size={20} />
-            </button>
-          </div>
 
         </div>
+
+        {/* Bento Grid */}
+
+        <div className="grid lg:grid-cols-12 gap-6">
+
+          {/* Left Card */}
+
+          <div className="
+            lg:col-span-6
+            bg-white
+            border-4
+            border-slate-950
+            p-10
+            shadow-[12px_12px_0_0_rgba(15,23,42,1)]
+          ">
+
+            <div className="
+              w-16 h-16
+              bg-emerald-400
+              border-4
+              border-slate-950
+              flex
+              items-center
+              justify-center
+            ">
+              <Rocket size={30} />
+            </div>
+
+            <h3 className="
+              mt-8
+              text-4xl
+              font-black
+              text-slate-950
+            ">
+              Ready Products
+            </h3>
+
+            <p className="
+              mt-6
+              text-lg
+              text-slate-600
+            ">
+              Launch quickly using proven platforms already
+              powering real businesses.
+            </p>
+
+            <div className="mt-10 space-y-4">
+
+              {[
+                "Eduline Learning Platform",
+                "WhatsApp CRM",
+                "Billing & Inventory",
+                "Cloud Infrastructure",
+                "Fast Deployment"
+              ].map((item) => (
+                <div
+                  key={item}
+                  className="
+                    flex
+                    items-center
+                    gap-3
+                    border-2
+                    border-slate-950
+                    p-4
+                    bg-[#fafafa]
+                  "
+                >
+                  <CheckCircle2 size={18} />
+                  <span className="font-bold">
+                    {item}
+                  </span>
+                </div>
+              ))}
+
+            </div>
+
+            <button className="
+              mt-10
+              bg-emerald-400
+              border-4
+              border-slate-950
+              px-8
+              py-4
+              font-black
+              uppercase
+              flex
+              items-center
+              gap-3
+              shadow-[6px_6px_0_0_rgba(15,23,42,1)]
+              hover:translate-x-1
+              hover:translate-y-1
+              hover:shadow-none
+              transition-all
+            ">
+              Explore Products
+              <ArrowRight size={20} />
+            </button>
+
+          </div>
+
+          {/* Right Card */}
+
+          <div className="
+            lg:col-span-6
+            bg-slate-950
+            text-white
+            border-4
+            border-slate-950
+            p-10
+            shadow-[12px_12px_0_0_rgba(16,185,129,1)]
+          ">
+
+            <div className="
+              w-16 h-16
+              bg-emerald-400
+              text-slate-950
+              border-4
+              border-emerald-400
+              flex
+              items-center
+              justify-center
+            ">
+              <Settings size={30} />
+            </div>
+
+            <h3 className="
+              mt-8
+              text-4xl
+              font-black
+            ">
+              Custom Systems
+            </h3>
+
+            <p className="
+              mt-6
+              text-lg
+              text-slate-300
+            ">
+              When standard tools aren't enough,
+              we design and build complete digital ecosystems.
+            </p>
+
+            <div className="mt-10 space-y-4">
+
+              {[
+                "Business Process Design",
+                "Automation Workflows",
+                "Custom Platforms",
+                "Internal Tools",
+                "System Integration"
+              ].map((item) => (
+                <div
+                  key={item}
+                  className="
+                    flex
+                    items-center
+                    gap-3
+                    border
+                    border-white/10
+                    p-4
+                    bg-white/5
+                  "
+                >
+                  <Cpu size={18} className="text-emerald-400" />
+                  <span className="font-bold">
+                    {item}
+                  </span>
+                </div>
+              ))}
+
+            </div>
+
+            <button className="
+              mt-10
+              bg-emerald-400
+              text-slate-950
+              border-4
+              border-emerald-400
+              px-8
+              py-4
+              font-black
+              uppercase
+              flex
+              items-center
+              gap-3
+              shadow-[6px_6px_0_0_rgba(255,255,255,1)]
+              hover:translate-x-1
+              hover:translate-y-1
+              hover:shadow-none
+              transition-all
+            ">
+              Start Project
+              <ArrowRight size={20} />
+            </button>
+
+          </div>
+
+          {/* Bottom Cards */}
+
+          <div className="
+            lg:col-span-4
+            bg-white
+            border-4
+            border-slate-950
+            p-8
+            shadow-[8px_8px_0_0_rgba(15,23,42,1)]
+          ">
+            <Boxes className="mb-4" size={32} />
+
+            <div className="text-sm uppercase font-black">
+              Products
+            </div>
+
+            <div className="mt-4 text-6xl font-black">
+              3+
+            </div>
+
+            <div className="mt-2 text-slate-600">
+              Ready-to-use platforms
+            </div>
+          </div>
+
+          <div className="
+            lg:col-span-4
+            bg-emerald-400
+            border-4
+            border-slate-950
+            p-8
+            shadow-[8px_8px_0_0_rgba(15,23,42,1)]
+          ">
+            <div className="text-sm uppercase font-black">
+              Philosophy
+            </div>
+
+            <div className="mt-4 text-4xl font-black leading-tight">
+              Build Once.
+              <br />
+              Run Forever.
+            </div>
+          </div>
+
+          <div className="
+            lg:col-span-4
+            bg-white
+            border-4
+            border-slate-950
+            p-8
+            shadow-[8px_8px_0_0_rgba(15,23,42,1)]
+          ">
+            <div className="text-sm uppercase font-black">
+              Growth Path
+            </div>
+
+            <div className="mt-4 text-4xl font-black">
+              Product →
+              <br />
+              System
+            </div>
+
+            <div className="mt-3 text-slate-600">
+              Start simple. Scale intelligently.
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </section>
   );

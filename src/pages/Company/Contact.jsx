@@ -1,132 +1,342 @@
-import { Mail, Phone, MapPin, Send, MessageSquare, Clock } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Send,
+  Clock,
+  ArrowUpRight,
+} from "lucide-react";
 
 export default function Contact() {
   return (
-    <section className="bg-white py-24">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="relative py-32 bg-[#f7faf8] overflow-hidden text-slate-900">
 
-        {/* ===== HEADER ===== */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-20 gap-8">
-          <div className="max-w-2xl">
-            <h2 className="text-blue-600 font-bold tracking-widest uppercase text-sm mb-3">
-              Get in Touch
-            </h2>
-            <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight">
-              Let’s Build Your <br />
-              <span className="text-slate-400 font-medium italic">Next Big System</span>
-            </h1>
+      {/* Grid */}
+      <div
+        className="absolute inset-0 opacity-50"
+        style={{
+          backgroundImage: `
+            linear-gradient(to right, rgba(16,185,129,.08) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(16,185,129,.08) 1px, transparent 1px)
+          `,
+          backgroundSize: "40px 40px",
+        }}
+      />
+
+      {/* Glow */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[700px] bg-emerald-300/20 blur-3xl rounded-full" />
+
+      <div className="relative max-w-7xl mx-auto px-6">
+
+        {/* Header */}
+
+        <div className="mb-20">
+
+          <div className="
+            inline-flex
+            items-center
+            gap-2
+            px-4
+            py-2
+            bg-white
+            border-2
+            border-slate-950
+            shadow-[4px_4px_0_0_rgba(15,23,42,1)]
+            text-xs
+            uppercase
+            tracking-widest
+            font-black
+          ">
+            ● Contact
           </div>
-          <p className="text-slate-600 text-lg max-w-sm leading-relaxed border-l-4 border-blue-600 pl-6">
-            Whether you need a quick Eduline setup or a ground-up enterprise architecture, we’re ready.
-          </p>
+
+          <h2 className="
+            mt-8
+            text-5xl
+            md:text-7xl
+            font-black
+            tracking-tight
+            leading-none
+            text-slate-950
+          ">
+            LET'S BUILD
+            <br />
+            SOMETHING
+            <br />
+            <span className="text-emerald-600">
+              REMARKABLE.
+            </span>
+          </h2>
+
         </div>
 
-        <div className="grid lg:grid-cols-12 gap-16 items-start">
+        <div className="grid lg:grid-cols-12 gap-6">
 
-          {/* ==== LEFT: CONTACT INFO ==== */}
-          <div className="lg:col-span-5 space-y-12">
+          {/* Left */}
 
-            {/* Info Cards */}
-            <div className="grid gap-8">
-              <div className="group flex items-start gap-6">
-                <div className="w-14 h-14 shrink-0 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
-                  <Mail size={24} />
-                </div>
-                <div>
-                  <h3 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-1">Email Us</h3>
-                  <a href="mailto:contact@everlinesys.com" className="text-xl font-bold text-slate-900 hover:text-blue-600 transition-colors">
-                    contact@everlinesys.com
-                  </a>
-                </div>
+          <div className="lg:col-span-5 space-y-6">
+
+            {/* Contact Card */}
+
+            <div className="
+              bg-slate-950
+              text-white
+              border-4
+              border-slate-950
+              p-8
+              shadow-[12px_12px_0_0_rgba(16,185,129,1)]
+            ">
+
+              <div className="
+                text-xs
+                uppercase
+                tracking-widest
+                font-black
+                text-emerald-400
+              ">
+                Contact Information
               </div>
 
-              <div className="group flex items-start gap-6">
-                <div className="w-14 h-14 shrink-0 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300">
-                  <Phone size={24} />
+              <div className="mt-8 space-y-8">
+
+                <div className="flex gap-4">
+                  <Mail className="text-emerald-400 shrink-0" />
+                  <div>
+                    <div className="text-xs uppercase font-black text-slate-400">
+                      Email
+                    </div>
+                    <div className="text-xl font-black">
+                      contact@everlinesys.com
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-1">Call Support</h3>
-                  <a href="tel:+919400690911" className="text-xl font-bold text-slate-900 hover:text-emerald-600 transition-colors">
-                    +91 94006 90911
-                  </a>
+
+                <div className="flex gap-4">
+                  <Phone className="text-emerald-400 shrink-0" />
+                  <div>
+                    <div className="text-xs uppercase font-black text-slate-400">
+                      Phone
+                    </div>
+                    <div className="text-xl font-black">
+                      +91 94006 90911
+                    </div>
+                  </div>
                 </div>
+
+                <div className="flex gap-4">
+                  <MapPin className="text-emerald-400 shrink-0" />
+                  <div>
+                    <div className="text-xs uppercase font-black text-slate-400">
+                      Location
+                    </div>
+                    <div className="text-xl font-black">
+                      Kakkanad
+                    </div>
+                    <div className="text-slate-400">
+                      Near Infopark Phase 2
+                    </div>
+                  </div>
+                </div>
+
               </div>
 
-              <div className="group flex items-start gap-6">
-                <div className="w-14 h-14 shrink-0 bg-slate-100 text-slate-600 rounded-2xl flex items-center justify-center group-hover:bg-slate-900 group-hover:text-white transition-all duration-300">
-                  <MapPin size={24} />
-                </div>
-                <div>
-                  <h3 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-1">Office</h3>
-                  <p className="text-xl font-bold text-slate-900 leading-tight">
-                    kakkanad, <br />Near Infopark Phase 2, Kochi <br />
-                    <span className="text-slate-500 font-medium text-lg">Kerala, India — 682030</span>
-                  </p>
-                </div>
-              </div>
             </div>
 
-            {/* Availability Note */}
-            <div className="p-8 bg-slate-50 rounded-[2rem] border border-slate-100">
-              <div className="flex items-center gap-3 text-slate-900 font-bold mb-3">
-                <Clock size={20} className="text-blue-600" />
+            {/* Response Card */}
+
+            <div className="
+              bg-white
+              border-4
+              border-slate-950
+              p-8
+              shadow-[8px_8px_0_0_rgba(15,23,42,1)]
+            ">
+
+              <Clock className="mb-4" />
+
+              <div className="
+                text-xs
+                uppercase
+                font-black
+              ">
                 Response Time
               </div>
-              <p className="text-slate-600 text-sm leading-relaxed">
-                Our sales and technical teams typically respond within <span className="text-slate-900 font-bold">2-4 business hours</span>. For urgent production issues, please use our 24/7 priority support line.
+
+              <div className="
+                mt-4
+                text-4xl
+                font-black
+              ">
+                2-4 Hours
+              </div>
+
+              <p className="
+                mt-3
+                text-slate-600
+              ">
+                Typical response time during business hours.
               </p>
+
             </div>
+
           </div>
 
-          {/* ==== RIGHT: CONTACT FORM ==== */}
-          <div className="lg:col-span-7">
-            <form className="relative bg-white p-8 md:p-12 rounded-[2.5rem] shadow-2xl shadow-slate-200 border border-slate-100 text-black">
-              <div className="grid md:grid-cols-2 gap-6 mb-6">
-                <div className="space-y-2">
-                  <label className="text-sm font-bold text-slate-700 ml-1">Your Name</label>
-                  <input
-                    type="text"
-                    placeholder="Name"
-                    className="w-full bg-slate-50 border border-slate-200 rounded-xl px-5 py-4 focus:outline-none focus:ring-4 focus:ring-blue-500/10 focus:border-blue-500 transition-all"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <label className="text-sm font-bold text-slate-700 ml-1">Email Address</label>
-                  <input
-                    type="email"
-                    placeholder="name@company.com"
-                    className="w-full bg-slate-50 border border-slate-200 rounded-xl px-5 py-4 focus:outline-none focus:ring-4 focus:ring-blue-500/10 focus:border-blue-500 transition-all"
-                  />
-                </div>
-              </div>
+          {/* Form */}
 
-              <div className="space-y-2 mb-8">
-                <label className="text-sm font-bold text-slate-700 ml-1">How can we help?</label>
-                <textarea
-                  rows="5"
-                  placeholder="Tell us about your project or product needs..."
-                  className="w-full bg-slate-50 border border-slate-200 rounded-xl px-5 py-4 focus:outline-none focus:ring-4 focus:ring-blue-500/10 focus:border-blue-500 transition-all resize-none"
-                />
-              </div>
+          <div className="
+            lg:col-span-7
+            bg-white
+            border-4
+            border-slate-950
+            p-8
+            md:p-10
+            shadow-[12px_12px_0_0_rgba(15,23,42,1)]
+          ">
+
+            <div className="
+              text-xs
+              uppercase
+              tracking-widest
+              font-black
+              mb-8
+            ">
+              Start A Conversation
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-5">
+
+              <input
+                type="text"
+                placeholder="Your Name"
+                className="
+                  border-4
+                  border-slate-950
+                  p-4
+                  font-bold
+                  outline-none
+                  focus:bg-emerald-50
+                "
+              />
+
+              <input
+                type="email"
+                placeholder="Email Address"
+                className="
+                  border-4
+                  border-slate-950
+                  p-4
+                  font-bold
+                  outline-none
+                  focus:bg-emerald-50
+                "
+              />
+
+            </div>
+
+            <input
+              type="text"
+              placeholder="Company / Organization"
+              className="
+                mt-5
+                w-full
+                border-4
+                border-slate-950
+                p-4
+                font-bold
+                outline-none
+                focus:bg-emerald-50
+              "
+            />
+
+            <textarea
+              rows={7}
+              placeholder="Tell us about your project..."
+              className="
+                mt-5
+                w-full
+                border-4
+                border-slate-950
+                p-4
+                font-bold
+                outline-none
+                resize-none
+                focus:bg-emerald-50
+              "
+            />
+
+            <div className="
+              mt-8
+              flex
+              flex-col
+              md:flex-row
+              gap-4
+            ">
 
               <a
-                href="https://wa.me/919400690911?text=Hello%20Everlinesys%2C%20I%20want%20to%20know%20more%20about%20your%20products."
+                href="https://wa.me/919400690911?text=Hello%20Everline%20Systems"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center justify-center gap-3 w-full bg-blue-600 text-white py-5 rounded-2xl font-bold text-lg hover:bg-green-700 shadow-xl shadow-green-500/30 transition-all active:scale-[0.98]"
-             style={{color:"white"}} >
-                Send 
-                <Send size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                className="
+                  flex-1
+                  bg-emerald-400
+                  text-slate-950
+                  border-4
+                  border-slate-950
+                  py-5
+                  px-6
+                  font-black
+                  uppercase
+                  flex
+                  items-center
+                  justify-center
+                  gap-3
+                  shadow-[8px_8px_0_0_rgba(15,23,42,1)]
+                  hover:translate-x-1
+                  hover:translate-y-1
+                  hover:shadow-none
+                  transition-all
+                "
+              >
+                Send Message
+                <Send size={18} />
               </a>
 
+              <a
+                href="mailto:contact@everlinesys.com"
+                className="
+                  px-8
+                  border-4
+                  border-slate-950
+                  py-5
+                  font-black
+                  uppercase
+                  flex
+                  items-center
+                  justify-center
+                  gap-2
+                  bg-white
+                "
+              >
+                Email Us
+                <ArrowUpRight size={18} />
+              </a>
 
-              <p className="mt-6 text-center text-xs text-slate-400">
-                By clicking send, you agree to our privacy policy and terms of service.
-              </p>
-            </form>
+            </div>
+
+            <p className="
+              mt-6
+              text-xs
+              uppercase
+              font-black
+              text-slate-400
+            ">
+              Build Once. Run Forever.
+            </p>
+
           </div>
 
         </div>
+
       </div>
     </section>
   );

@@ -11,14 +11,16 @@ import Contact from "../pages/Company/Contact";
 import NotFound from "../pages/Notfound";
 import Solutions from "../pages/Solutions/Solutions";
 import Resources from "../pages/Resources/Resources";
-import PrivacyPolicy from "../pages/Legal/PrivacyPolicy";
+import Policy from "../pages/Legal/Policy";
 import TermsConditions from "../pages/Legal/TermsConditions";
 import EdulineAppPolicy from "../pages/Legal/EdulineAppPolicy";
-
+import ScrollToTop from "../ScrollToTop";
 export default function AppRoutes() {
     return (
         <BrowserRouter>
+           <ScrollToTop />
             <Routes>
+
 
                 <Route element={<MainLayout />}>
 
@@ -35,9 +37,10 @@ export default function AppRoutes() {
                     <Route path="/get-started" element={<Contact />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/login" element={<Contact />} />
-                    <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                    {/* <Route path="/privacypolicy" element={<PrivacyPolicy />} /> */}
+                    <Route path="/policy" element={<Policy />} />
                     <Route path="/terms-conditions" element={<TermsConditions />} />
-                    <Route path="/my-learning/privacy-policy" element={<EdulineAppPolicy />} />
+                    <Route path="/my-learning/policy" element={<EdulineAppPolicy />} />
                 </Route>
 
                 <Route path="*" element={<NotFound />} />

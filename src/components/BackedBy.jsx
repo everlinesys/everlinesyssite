@@ -1,65 +1,171 @@
 import {
   SiGoogle,
-  SiGoogleanalytics,
   SiAmazon,
   SiHostinger,
   SiGodaddy,
   SiVercel,
-  SiStreamlabs,
   SiMeta,
-  SiFirebase
+  SiFirebase,
 } from "react-icons/si";
 
 export default function BackedBy() {
   const partners = [
     { icon: SiGoogle, name: "Google" },
-    { icon: SiGoogleanalytics, name: "Google Analytics" },
     { icon: SiAmazon, name: "AWS" },
     { icon: SiHostinger, name: "Hostinger" },
     { icon: SiGodaddy, name: "GoDaddy" },
     { icon: SiVercel, name: "Vercel" },
-    { icon: SiStreamlabs, name: "Bunny Stream" },
-    { icon: SiMeta, name: "Meta Business" },
-    { icon: SiGoogle, name: "Google AdSense" },
+    { icon: SiMeta, name: "Meta" },
     { icon: SiFirebase, name: "Firebase" },
   ];
 
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="relative py-32 bg-[#f7faf8] overflow-hidden text-slate-900">
+
+      {/* Grid */}
+      <div
+        className="absolute inset-0 opacity-50"
+        style={{
+          backgroundImage: `
+            linear-gradient(to right, rgba(16,185,129,.08) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(16,185,129,.08) 1px, transparent 1px)
+          `,
+          backgroundSize: "40px 40px",
+        }}
+      />
+
+      {/* Glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[600px] bg-emerald-300/20 blur-3xl rounded-full" />
+
+      <div className="relative max-w-7xl mx-auto px-6">
 
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight">
-            Backed by <span className="text-blue-600">Global Technology Leaders</span>
+
+        <div className="mb-16">
+
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white border-2 border-slate-950 font-black uppercase text-xs tracking-widest shadow-[4px_4px_0_0_rgba(15,23,42,1)]">
+            ● Infrastructure
+          </div>
+
+          <h2 className="mt-8 text-5xl md:text-7xl font-black tracking-tight text-slate-950">
+            POWERED BY
+            <br />
+            GLOBAL
+            <br />
+            PLATFORMS.
           </h2>
-          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Our platforms are powered by world-class infrastructure, 
-            trusted globally for performance, scalability, and security.
+
+          <p className="mt-6 max-w-2xl text-xl font-medium text-slate-600">
+            Built on trusted infrastructure used by millions of businesses worldwide.
           </p>
+
         </div>
 
-        {/* Logo Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-10 items-center">
-          {partners.map((partner, i) => {
-            const Icon = partner.icon;
-            return (
-              <div
-                key={i}
-                className="group flex flex-col items-center justify-center gap-3 
-                           text-slate-400 hover:text-blue-600 
-                           transition-all duration-300"
-              >
-                <Icon size={48} className="grayscale group-hover:grayscale-0 transition duration-300" />
-                <span className="text-sm font-medium text-center">
-                  {partner.name}
-                </span>
-              </div>
-            );
-          })}
+        {/* Bento Layout */}
+
+        <div className="grid lg:grid-cols-12 gap-6">
+
+          {/* Large Card */}
+
+          <div className="lg:col-span-5 bg-slate-950 text-white border-4 border-slate-950 p-10 shadow-[12px_12px_0_0_rgba(16,185,129,1)]">
+
+            <div className="text-emerald-400 text-xs uppercase font-black tracking-widest">
+              Infrastructure Stack
+            </div>
+
+            <h3 className="mt-6 text-4xl md:text-5xl font-black leading-tight">
+              Enterprise-grade
+              <br />
+              technology.
+            </h3>
+
+            <p className="mt-6 text-slate-300 text-lg">
+              Hosting, cloud infrastructure, analytics,
+              authentication, streaming and deployment powered
+              by industry-leading platforms.
+            </p>
+
+          </div>
+
+          {/* Logo Grid */}
+
+          <div className="lg:col-span-7 grid grid-cols-2 md:grid-cols-4 gap-6">
+
+            {partners.map((partner) => {
+              const Icon = partner.icon;
+
+              return (
+                <div
+                  key={partner.name}
+                  className="
+                    bg-white
+                    border-4
+                    border-slate-950
+                    p-8
+                    flex
+                    flex-col
+                    items-center
+                    justify-center
+                    gap-4
+                    shadow-[8px_8px_0_0_rgba(15,23,42,1)]
+                    hover:bg-emerald-400
+                    hover:-translate-y-1
+                    transition-all
+                  "
+                >
+                  <Icon size={42} />
+
+                  <span className="font-black text-sm uppercase tracking-wide text-center">
+                    {partner.name}
+                  </span>
+                </div>
+              );
+            })}
+
+          </div>
+
+          {/* Bottom Stats */}
+
+          <div className="lg:col-span-4 bg-white border-4 border-slate-950 p-8 shadow-[8px_8px_0_0_rgba(15,23,42,1)]">
+
+            <div className="text-xs uppercase font-black">
+              Uptime
+            </div>
+
+            <div className="mt-4 text-6xl font-black">
+              99.9%
+            </div>
+
+          </div>
+
+          <div className="lg:col-span-4 bg-emerald-400 border-4 border-slate-950 p-8 shadow-[8px_8px_0_0_rgba(15,23,42,1)]">
+
+            <div className="text-xs uppercase font-black">
+              Deployments
+            </div>
+
+            <div className="mt-4 text-6xl font-black">
+              Fast
+            </div>
+
+          </div>
+
+          <div className="lg:col-span-4 bg-white border-4 border-slate-950 p-8 shadow-[8px_8px_0_0_rgba(15,23,42,1)]">
+
+            <div className="text-xs uppercase font-black">
+              Security
+            </div>
+
+            <div className="mt-4 text-6xl font-black">
+              Secure
+            </div>
+
+          </div>
+
         </div>
 
       </div>
+
     </section>
   );
 }
