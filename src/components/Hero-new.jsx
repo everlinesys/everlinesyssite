@@ -7,7 +7,7 @@ export default function HeroDev() {
             className="relative pt-24 pb-16 overflow-hidden flex flex-col items-center bg-cover bg-center"
             style={{
                 backgroundImage:
-                    "url('https://images.unsplash.com/photo-1551434678-e076c223a692')",
+                    "url('/bg.jpg')",
             }}
         >
 
