@@ -6,7 +6,7 @@ export default function Pricing() {
       name: "Eduline",
       icon: <GraduationCap className="text-blue-600" size={24} />,
       description: "Scalable platform for educators. Pricing scales with student count and advanced anti-piracy features.",
-      link: "https://eduline.yoursite.com/pricing",
+      link: "https://eduline.everlinesys.com/pricing",
       cta: "View Eduline Plans",
       tag: "Best for Academies"
     },
@@ -14,7 +14,7 @@ export default function Pricing() {
       name: "WhatsApp CRM",
       icon: <MessageSquare className="text-green-600" size={24} />,
       description: "Volume-based pricing tailored to your agent count and monthly conversation requirements.",
-      link: "https://crm.yoursite.com/pricing",
+      link: "https://crm.everlinesys.com/pricing",
       cta: "View CRM Plans",
       tag: "Best for Sales Teams"
     },
@@ -22,7 +22,7 @@ export default function Pricing() {
       name: "Billing & Stock",
       icon: <BarChart3 className="text-indigo-600" size={24} />,
       description: "Comprehensive ERP plans designed for inventory-heavy businesses and retail operations.",
-      link: "https://billing.yoursite.com/pricing",
+      link: "https://billing.everlinesys.com/pricing",
       cta: "View Billing Plans",
       tag: "Best for Operations"
     },
