@@ -4,11 +4,11 @@ import { ShieldCheck, Lock, Database, Eye, FileText, Mail } from "lucide-react";
 function Section({ number, title, children }) {
   return (
     <div className="bg-white border-4 border-slate-950 p-8 shadow-[8px_8px_0_0_rgba(15,23,42,1)]">
-      <div className="text-xs uppercase font-black tracking-widest text-emerald-600">
+      <div className="text-xs uppercase font-semibold tracking-widest text-emerald-600">
         Section {number}
       </div>
 
-      <h2 className="mt-3 text-3xl font-black text-slate-950">
+      <h2 className="mt-3 text-3xl font-semibold text-slate-950">
         {title}
       </h2>
 
@@ -62,7 +62,7 @@ export default function EdulineAppPolicy() {
               py-2
               bg-emerald-400
               text-slate-950
-              font-black
+              font-semibold
               uppercase
               text-xs
             ">
@@ -74,7 +74,7 @@ export default function EdulineAppPolicy() {
               mt-8
               text-5xl
               md:text-7xl
-              font-black
+              font-semibold
               leading-none
             ">
               YOUR DATA.
@@ -103,15 +103,15 @@ export default function EdulineAppPolicy() {
             shadow-[12px_12px_0_0_rgba(15,23,42,1)]
           ">
 
-            <div className="text-xs uppercase font-black">
+            <div className="text-xs uppercase font-semibold">
               Effective Date
             </div>
 
-            <div className="mt-4 text-5xl font-black">
+            <div className="mt-4 text-5xl font-semibold">
               2024
             </div>
 
-            <div className="mt-6 text-lg font-bold">
+            <div className="mt-6 text-lg font-semibold">
               Operated by
               <br />
               Everline Systems
@@ -128,7 +128,7 @@ export default function EdulineAppPolicy() {
           <Section number="01" title="Information We Collect">
 
             <div>
-              <h4 className="font-black mb-2">Personal Information</h4>
+              <h4 className="font-semibold mb-2">Personal Information</h4>
               <ul className="list-disc pl-6">
                 <li>Name</li>
                 <li>Email Address</li>
@@ -138,7 +138,7 @@ export default function EdulineAppPolicy() {
             </div>
 
             <div>
-              <h4 className="font-black mb-2">Usage Data</h4>
+              <h4 className="font-semibold mb-2">Usage Data</h4>
               <ul className="list-disc pl-6">
                 <li>Course Activity</li>
                 <li>Pages Visited</li>
@@ -147,7 +147,7 @@ export default function EdulineAppPolicy() {
             </div>
 
             <div>
-              <h4 className="font-black mb-2">Payment Information</h4>
+              <h4 className="font-semibold mb-2">Payment Information</h4>
               <p>
                 Payments are processed through third-party gateways.
                 We do not store card or banking details.
@@ -284,11 +284,11 @@ export default function EdulineAppPolicy() {
           p-8
           shadow-[8px_8px_0_0_rgba(16,185,129,1)]
         ">
-          <div className="text-emerald-400 text-xs uppercase font-black">
+          <div className="text-emerald-400 text-xs uppercase font-semibold">
             Agreement
           </div>
 
-          <p className="mt-4 text-xl font-bold">
+          <p className="mt-4 text-xl font-semibold">
             By using MyLearning, you agree to this Privacy Policy.
           </p>
         </div>

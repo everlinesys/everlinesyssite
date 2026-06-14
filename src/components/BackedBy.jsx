@@ -43,11 +43,11 @@ export default function BackedBy() {
 
         <div className="mb-16">
 
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white border-2 border-slate-950 font-black uppercase text-xs tracking-widest shadow-[4px_4px_0_0_rgba(15,23,42,1)]">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white border-2 border-slate-950 font-semibold uppercase text-xs tracking-widest shadow-[4px_4px_0_0_rgba(15,23,42,1)]">
             ● Infrastructure
           </div>
 
-          <h2 className="mt-8 text-5xl md:text-7xl font-black tracking-tight text-slate-950">
+          <h2 className="mt-8 text-5xl md:text-7xl font-semibold tracking-tight text-slate-950">
             POWERED BY
             <br />
             GLOBAL
@@ -69,11 +69,11 @@ export default function BackedBy() {
 
           <div className="lg:col-span-5 bg-slate-950 text-white border-4 border-slate-950 p-10 shadow-[12px_12px_0_0_rgba(16,185,129,1)]">
 
-            <div className="text-emerald-400 text-xs uppercase font-black tracking-widest">
+            <div className="text-emerald-400 text-xs uppercase font-semibold tracking-widest">
               Infrastructure Stack
             </div>
 
-            <h3 className="mt-6 text-4xl md:text-5xl font-black leading-tight">
+            <h3 className="mt-6 text-4xl md:text-5xl font-semibold leading-tight">
               Enterprise-grade
               <br />
               technology.
@@ -115,7 +115,7 @@ export default function BackedBy() {
                 >
                   <Icon size={42} />
 
-                  <span className="font-black text-sm uppercase tracking-wide text-center">
+                  <span className="font-semibold text-sm uppercase tracking-wide text-center">
                     {partner.name}
                   </span>
                 </div>
@@ -128,11 +128,11 @@ export default function BackedBy() {
 
           <div className="lg:col-span-4 bg-white border-4 border-slate-950 p-8 shadow-[8px_8px_0_0_rgba(15,23,42,1)]">
 
-            <div className="text-xs uppercase font-black">
+            <div className="text-xs uppercase font-semibold">
               Uptime
             </div>
 
-            <div className="mt-4 text-6xl font-black">
+            <div className="mt-4 text-6xl font-semibold">
               99.9%
             </div>
 
@@ -140,11 +140,11 @@ export default function BackedBy() {
 
           <div className="lg:col-span-4 bg-emerald-400 border-4 border-slate-950 p-8 shadow-[8px_8px_0_0_rgba(15,23,42,1)]">
 
-            <div className="text-xs uppercase font-black">
+            <div className="text-xs uppercase font-semibold">
               Deployments
             </div>
 
-            <div className="mt-4 text-6xl font-black">
+            <div className="mt-4 text-6xl font-semibold">
               Fast
             </div>
 
@@ -152,11 +152,11 @@ export default function BackedBy() {
 
           <div className="lg:col-span-4 bg-white border-4 border-slate-950 p-8 shadow-[8px_8px_0_0_rgba(15,23,42,1)]">
 
-            <div className="text-xs uppercase font-black">
+            <div className="text-xs uppercase font-semibold">
               Security
             </div>
 
-            <div className="mt-4 text-6xl font-black">
+            <div className="mt-4 text-6xl font-semibold">
               Secure
             </div>
 

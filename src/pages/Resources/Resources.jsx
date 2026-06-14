@@ -1,11 +1,9 @@
 import {
   BookOpen,
   FileText,
-  Video,
-  Download,
-  ArrowRight,
-  Search,
+  PlayCircle,
   LifeBuoy,
+  ArrowRight,
 } from "lucide-react";
 
 export default function Resources() {
@@ -13,390 +11,152 @@ export default function Resources() {
     {
       icon: BookOpen,
       title: "Documentation",
-      desc: "Setup guides, platform configuration and product documentation.",
+      description:
+        "Setup guides, technical references, and product documentation.",
     },
     {
       icon: FileText,
-      title: "Case Studies",
-      desc: "See how educators and businesses use Everline products.",
+      title: "Insights",
+      description:
+        "Articles and practical guidance on software, automation, and digital growth.",
     },
     {
-      icon: Video,
-      title: "Video Tutorials",
-      desc: "Step-by-step walkthroughs and onboarding videos.",
+      icon: PlayCircle,
+      title: "Tutorials",
+      description:
+        "Video walkthroughs to help teams get started faster.",
     },
     {
-      icon: Download,
-      title: "Downloads",
-      desc: "Brochures, guides, PDFs and marketing assets.",
+      icon: LifeBuoy,
+      title: "Support",
+      description:
+        "Technical assistance, onboarding support, and troubleshooting resources.",
     },
   ];
 
-  return (
-    <section className="relative py-32 bg-[#f7faf8] overflow-hidden">
+  return (<section className="bg-[#f5f5f3] py-24 lg:py-32"> <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
-      {/* Grid */}
-      <div
-        className="absolute inset-0 opacity-50"
-        style={{
-          backgroundImage: `
-            linear-gradient(to right, rgba(16,185,129,.08) 1px, transparent 1px),
-            linear-gradient(to bottom, rgba(16,185,129,.08) 1px, transparent 1px)
-          `,
-          backgroundSize: "40px 40px",
-        }}
-      />
 
-      {/* Glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[700px] bg-emerald-300/20 blur-3xl rounded-full" />
+    {/* Header */}
+    <div className="max-w-4xl mb-20">
 
-      <div className="relative max-w-7xl mx-auto px-6">
+      <span className="text-blue-700 font-semibold text-sm uppercase tracking-wide">
+        Resource Center
+      </span>
 
-        {/* Header */}
+      <h1 className="mt-4 text-5xl lg:text-7xl font-semibold tracking-tight leading-[0.95] text-slate-900">
+        Learn, implement,
+        and grow.
+      </h1>
 
-        <div className="grid lg:grid-cols-12 gap-6 mb-12">
+      <p className="mt-8 text-xl text-slate-600 leading-relaxed max-w-3xl">
+        Explore documentation, tutorials, guides, and support resources
+        designed to help you get the most from Everline Systems products and services.
+      </p>
 
+    </div>
+
+    {/* Resource Grid */}
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      {resources.map((resource) => {
+        const Icon = resource.icon;
+
+        return (
           <div
-            className="
-              lg:col-span-8
-              bg-slate-950
-              text-white
-              border-4
-              border-slate-950
-              p-10
-              shadow-[12px_12px_0_0_rgba(16,185,129,1)]
-            "
+            key={resource.title}
+            className="bg-white border border-slate-200 rounded-3xl p-8 hover:border-slate-300 transition"
           >
-
-            <div
-              className="
-                inline-flex
-                items-center
-                gap-2
-                px-3
-                py-2
-                bg-emerald-400
-                text-slate-950
-                text-xs
-                uppercase
-                font-black
-              "
-            >
-              ● Resource Center
+            <div className="w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center">
+              <Icon className="text-blue-700" size={24} />
             </div>
 
-            <h2
-              className="
-                mt-8
-                text-5xl
-                md:text-7xl
-                font-black
-                leading-none
-              "
-            >
-              LEARN.
-              <br />
-              BUILD.
-              <br />
-              <span className="text-emerald-400">
-                SCALE.
-              </span>
-            </h2>
-
-            <p
-              className="
-                mt-8
-                text-xl
-                text-slate-300
-                max-w-2xl
-              "
-            >
-              Documentation, tutorials, case studies and
-              resources to help you get the most out of
-              Everline Systems products.
-            </p>
-
-          </div>
-
-          {/* Search Card */}
-
-          <div
-            className="
-              lg:col-span-4
-              bg-white
-              border-4
-              border-slate-950
-              p-8
-              shadow-[12px_12px_0_0_rgba(15,23,42,1)]
-            "
-          >
-
-            <div className="text-xs uppercase font-black">
-              Quick Search
-            </div>
-
-            <div className="relative mt-6">
-
-              <Search
-                size={18}
-                className="
-                  absolute
-                  left-4
-                  top-1/2
-                  -translate-y-1/2
-                  text-slate-500
-                "
-              />
-
-              <input
-                type="text"
-                placeholder="Search resources..."
-                className="
-                  w-full
-                  border-4
-                  border-slate-950
-                  pl-12
-                  pr-4
-                  py-4
-                  font-bold
-                  outline-none
-                "
-              />
-
-            </div>
-
-            <div className="
-              mt-6
-              text-sm
-              text-slate-600
-            ">
-              Find guides, videos, downloads and support content.
-            </div>
-
-          </div>
-
-        </div>
-
-        {/* Resources */}
-
-        <div className="grid lg:grid-cols-12 gap-6">
-
-          {/* Featured */}
-
-          <div
-            className="
-              lg:col-span-5
-              bg-emerald-400
-              border-4
-              border-slate-950
-              p-10
-              shadow-[12px_12px_0_0_rgba(15,23,42,1)]
-            "
-          >
-
-            <div className="
-              text-xs
-              uppercase
-              font-black
-              tracking-widest
-            ">
-              Featured Resource
-            </div>
-
-            <h3 className="
-              mt-6
-              text-5xl
-              font-black
-              leading-none
-            ">
-              START
-              HERE.
+            <h3 className="mt-6 text-2xl font-semibold text-slate-900">
+              {resource.title}
             </h3>
 
-            <p className="
-              mt-6
-              text-lg
-              font-medium
-            ">
-              New to Everline? Follow our getting started
-              guides and launch your platform quickly.
+            <p className="mt-4 text-slate-600 leading-relaxed">
+              {resource.description}
             </p>
 
-            <button
-              className="
-                mt-8
-                bg-slate-950
-                text-white
-                border-4
-                border-slate-950
-                px-8
-                py-4
-                font-black
-                uppercase
-                flex
-                items-center
-                gap-3
-                shadow-[6px_6px_0_0_rgba(255,255,255,1)]
-              "
-            >
-              Explore Guides
-              <ArrowRight size={18} />
+            <button className="mt-8 inline-flex items-center gap-2 text-blue-700 font-medium">
+              Explore
+              <ArrowRight size={16} />
             </button>
 
           </div>
+        );
+      })}
 
-          {/* Resource Cards */}
+    </div>
 
-          <div className="lg:col-span-7 grid md:grid-cols-2 gap-6">
+    {/* Featured Articles */}
+    <div className="mt-24">
 
-            {resources.map((item) => {
-              const Icon = item.icon;
+      <div className="flex items-center justify-between mb-10">
 
-              return (
-                <div
-                  key={item.title}
-                  className="
-                    bg-white
-                    border-4
-                    border-slate-950
-                    p-6
-                    shadow-[8px_8px_0_0_rgba(15,23,42,1)]
-                    hover:bg-emerald-400
-                    hover:-translate-y-1
-                    transition-all
-                  "
-                >
+        <h2 className="text-3xl font-semibold tracking-tight text-slate-900">
+          Latest Insights
+        </h2>
 
-                  <div
-                    className="
-                      w-14
-                      h-14
-                      border-4
-                      border-slate-950
-                      flex
-                      items-center
-                      justify-center
-                      mb-5
-                    "
-                  >
-                    <Icon size={24} />
-                  </div>
-
-                  <h3 className="
-                    text-xl
-                    font-black
-                    mb-3
-                  ">
-                    {item.title}
-                  </h3>
-
-                  <p className="
-                    text-slate-700
-                    font-medium
-                    mb-6
-                  ">
-                    {item.desc}
-                  </p>
-
-                  <div className="
-                    flex
-                    items-center
-                    gap-2
-                    text-sm
-                    uppercase
-                    font-black
-                  ">
-                    View Resource
-                    <ArrowRight size={16} />
-                  </div>
-
-                </div>
-              );
-            })}
-
-          </div>
-
-        </div>
-
-        {/* Bottom Support CTA */}
-
-        <div
-          className="
-            mt-12
-            bg-slate-950
-            text-white
-            border-4
-            border-slate-950
-            p-10
-            shadow-[12px_12px_0_0_rgba(16,185,129,1)]
-          "
-        >
-
-          <div className="
-            flex
-            flex-col
-            md:flex-row
-            items-center
-            justify-between
-            gap-8
-          ">
-
-            <div>
-
-              <div className="
-                text-xs
-                uppercase
-                font-black
-                tracking-widest
-                text-emerald-400
-              ">
-                Need Help?
-              </div>
-
-              <h3 className="
-                mt-4
-                text-4xl
-                font-black
-              ">
-                Support Available 24/7
-              </h3>
-
-              <p className="
-                mt-3
-                text-slate-300
-              ">
-                Our team is ready to help with setup,
-                migration and technical support.
-              </p>
-
-            </div>
-
-            <button
-              className="
-                bg-emerald-400
-                text-slate-950
-                border-4
-                border-emerald-400
-                px-8
-                py-5
-                font-black
-                uppercase
-                flex
-                items-center
-                gap-3
-                shadow-[6px_6px_0_0_rgba(255,255,255,1)]
-              "
-            >
-              <LifeBuoy size={18} />
-              Contact Support
-            </button>
-
-          </div>
-
-        </div>
+        <button className="text-blue-700 font-medium">
+          View All
+        </button>
 
       </div>
 
-    </section>
+      <div className="grid lg:grid-cols-3 gap-8">
+
+        {[1, 2, 3].map((item) => (
+          <article
+            key={item}
+            className="bg-white border border-slate-200 rounded-3xl overflow-hidden"
+          >
+            <div className="h-56 bg-slate-100" />
+
+            <div className="p-8">
+
+              <div className="text-sm text-slate-500">
+                Technology & Growth
+              </div>
+
+              <h3 className="mt-3 text-2xl font-semibold text-slate-900">
+                Example article title goes here
+              </h3>
+
+              <p className="mt-4 text-slate-600">
+                A short description of the article content.
+              </p>
+
+            </div>
+          </article>
+        ))}
+
+      </div>
+
+    </div>
+
+    {/* Support CTA */}
+    <div className="mt-24 bg-slate-900 rounded-[40px] p-12 lg:p-16 text-white">
+
+      <h2 className="text-4xl lg:text-5xl font-semibold tracking-tight">
+        Need help?
+      </h2>
+
+      <p className="mt-6 text-slate-300 text-lg max-w-2xl">
+        Our team is available to assist with onboarding,
+        migration, implementation, and technical support.
+      </p>
+
+      <button className="mt-10 bg-white text-slate-900 px-7 py-4 rounded-full font-medium">
+        Contact Support
+      </button>
+
+    </div>
+
+  </div>
+  </section>
+
+
   );
 }

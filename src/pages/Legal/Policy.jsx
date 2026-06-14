@@ -21,11 +21,11 @@ function Section({ number, title, children }) {
         shadow-[8px_8px_0_0_rgba(15,23,42,1)]
       "
     >
-      <div className="text-xs uppercase font-black tracking-widest text-emerald-600">
+      <div className="text-xs uppercase font-semibold tracking-widest text-emerald-600">
         Section {number}
       </div>
 
-      <h2 className="mt-3 text-3xl font-black text-slate-950">
+      <h2 className="mt-3 text-3xl font-semibold text-slate-950">
         {title}
       </h2>
 
@@ -82,7 +82,7 @@ export default function Policy() {
                 py-2
                 bg-emerald-400
                 text-slate-950
-                font-black
+                font-semibold
                 uppercase
                 text-xs
               "
@@ -96,7 +96,7 @@ export default function Policy() {
                 mt-8
                 text-5xl
                 md:text-7xl
-                font-black
+                font-semibold
                 leading-none
               "
             >
@@ -135,15 +135,15 @@ export default function Policy() {
             "
           >
 
-            <div className="text-xs uppercase font-black">
+            <div className="text-xs uppercase font-semibold">
               Effective Date
             </div>
 
-            <div className="mt-4 text-5xl font-black">
+            <div className="mt-4 text-5xl font-semibold">
               2024
             </div>
 
-            <div className="mt-6 text-lg font-bold">
+            <div className="mt-6 text-lg font-semibold">
               Everline Systems
             </div>
 
@@ -162,7 +162,7 @@ export default function Policy() {
           <Section number="01" title="Information We Collect">
 
             <div>
-              <h4 className="font-black mb-2">
+              <h4 className="font-semibold mb-2">
                 Personal Information
               </h4>
 
@@ -175,7 +175,7 @@ export default function Policy() {
             </div>
 
             <div>
-              <h4 className="font-black mb-2">
+              <h4 className="font-semibold mb-2">
                 Usage Data
               </h4>
 
@@ -187,7 +187,7 @@ export default function Policy() {
             </div>
 
             <div>
-              <h4 className="font-black mb-2">
+              <h4 className="font-semibold mb-2">
                 Payment Information
               </h4>
 
@@ -288,7 +288,7 @@ export default function Policy() {
 
             </div>
 
-            <p className="mt-4 font-bold">
+            <p className="mt-4 font-semibold">
               contact@everlinesys.com
             </p>
 
@@ -313,7 +313,7 @@ export default function Policy() {
                 border-slate-950
                 px-6
                 py-3
-                font-black
+                font-semibold
                 uppercase
                 shadow-[4px_4px_0_0_rgba(15,23,42,1)]
               "
@@ -370,11 +370,11 @@ export default function Policy() {
           "
         >
 
-          <div className="text-emerald-400 text-xs uppercase font-black">
+          <div className="text-emerald-400 text-xs uppercase font-semibold">
             Agreement
           </div>
 
-          <p className="mt-4 text-xl font-bold">
+          <p className="mt-4 text-xl font-semibold">
             By using Everline Systems products and services,
             you agree to this Privacy Policy.
           </p>

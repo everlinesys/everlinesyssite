@@ -1,116 +1,136 @@
 import { Link } from "react-router-dom";
-import { useEffect, useRef, useState } from "react";
-import { motion } from "framer-motion";
+import { ArrowRight, BarChart3, CheckCircle2, Layers3, ShieldCheck } from "lucide-react";
+
+const highlights = [
+  {
+    label: "Product news",
+    title: "Eduline brings course sales, student management, and analytics into one branded platform.",
+  },
+  {
+    label: "Implementation",
+    title: "Launch workflow automation and internal tools without rebuilding your whole operation.",
+  },
+  {
+    label: "Advisory",
+    title: "Plan the software foundation your business can use for years, not just one campaign.",
+  },
+];
 
 export default function Hero() {
-  const [visible, setVisible] = useState(false);
-  const imgRef = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => entry.isIntersecting && setVisible(true),
-      { threshold: 0.3 }
-    );
-
-    if (imgRef.current) observer.observe(imgRef.current);
-    return () => observer.disconnect();
-  }, []);
-
   return (
-    <section className="relative bg-slate-50 pt-20 pb-12 overflow-hidden flex flex-col items-center">
+    <section className="overflow-hidden border-t border-slate-200 bg-[#f7faf6]">
+      <div className="mx-auto max-w-[1400px] px-5 py-16 sm:px-8 lg:px-10 lg:py-4">
+        <div className="grid gap-12 lg:grid-cols-[1.02fr_0.98fr] lg:items-center">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.14em] text-emerald-700">
+              Business systems, learning platforms, and automation
+            </p>
 
-      {/* Top gradient */}
-      <div className="absolute top-0 left-0 w-full h-64 bg-gradient-to-b from-blue-50 to-transparent -z-10" />
+            <h1 className="mt-5 max-w-5xl text-[36px] font-semibold leading-[0.96] tracking-tight text-slate-950 sm:text-[64px] lg:text-[58px]">
+              Build a digital ecosystem your teams actually use.
+            </h1>
 
-      {/* Content */}
-      <div className="max-w-4xl px:2 md:px-4 sm:px-6 text-center">
+            <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-700">
+              Everline Systems helps growing organizations launch polished software,
+              connect operations, and turn disconnected workflows into reliable,
+              measurable systems.
+            </p>
 
-        {/* Headline */}
-        <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight">
-          Build Once.
-          <br />
-
-          <span className="relative inline-block mt-2">
-            <span className="relative z-10">
-              Run <span className="text-blue-600">Forever <svg
-                viewBox="0 0 200 20"
-                className="absolute -bottom-4 left-0 w-full text-blue-600 fill-none stroke-current"
-                xmlns="http://www.w3.org/2000/svg"
+            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+              <Link
+                to="/contact"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-700 px-7 py-4 font-semibold text-white transition hover:bg-emerald-800"
               >
-                <motion.path
-                  initial={{ pathLength: 0 }}
-                  whileInView={{ pathLength: 1 }}
-                  transition={{ duration: 1.2, ease: "easeOut" }}
-                  d="M5 15 Q 50 5, 100 15 T 195 15"
-                  strokeWidth="4"
-                  strokeLinecap="round"
+                Book a meeting
+                <ArrowRight className="h-5 w-5" />
+              </Link>
+
+              <Link
+                to="/products"
+                className="inline-flex items-center justify-center rounded-full border-2 border-slate-950 px-7 py-4 font-semibold text-slate-950 transition hover:bg-slate-950 hover:text-white"
+              >
+                Explore products
+              </Link>
+            </div>
+
+            <div className="mt-10 grid max-w-2xl gap-4 sm:grid-cols-3">
+              {[
+                ["99.9%", "reliable cloud delivery"],
+                ["3", "core product lines"],
+                ["24/7", "technical support"],
+              ].map(([value, label]) => (
+                <div key={value} className="border-l-2 border-emerald-600 pl-4">
+                  <div className="text-3xl font-semibold text-slate-950">{value}</div>
+                  <p className="mt-1 text-sm leading-5 text-slate-600">{label}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="relative">
+            <div className="absolute -right-16 -top-12 h-48 w-48 rounded-full bg-amber-200/50 blur-3xl" />
+            <div className="absolute -bottom-16 -left-12 h-56 w-56 rounded-full bg-cyan-200/50 blur-3xl" />
+
+            <div className="relative border border-slate-200 bg-white p-4 shadow-xl shadow-emerald-950/10">
+              <div className="grid gap-4 md:grid-cols-[0.95fr_1.05fr]">
+                <img
+                  src="/img2.png"
+                  alt="Eduline learning platform dashboard"
+                  className="h-full min-h-[360px] w-full object-cover"
                 />
-              </svg></span>.
-            </span>
 
-            {/* underline */}
-            <span className="absolute left-0 bottom-1 w-full h-3 bg-blue-200/70 -rotate-2 rounded-md -z-10" />
-          </span>
-        </h1>
+                <div className="flex flex-col gap-4">
+                  <div className="bg-emerald-950 p-6 text-white">
+                    <div className="flex h-11 w-11 items-center justify-center bg-emerald-500/20">
+                      <Layers3 className="h-6 w-6 text-emerald-300" />
+                    </div>
+                    <h2 className="mt-6 text-2xl font-semibold">Connected product stack</h2>
+                    <p className="mt-3 text-sm leading-6 text-emerald-50/80">
+                      Learning, CRM, billing, dashboards, and automation designed
+                      around the way your organization already works.
+                    </p>
+                  </div>
 
-        {/* Description */}
-        <p className="mt-8 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto"
-        
-        >
-          Everline Systems builds scalable digital platforms that automate
-          operations, manage workflows, and power your growth.
-        </p>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="border border-slate-200 bg-[#f7faf6] p-5">
+                      <BarChart3 className="h-6 w-6 text-emerald-700" />
+                      <p className="mt-5 text-sm font-semibold text-slate-950">Live insights</p>
+                      <p className="mt-1 text-xs leading-5 text-slate-600">Useful reporting for teams and leaders.</p>
+                    </div>
+                    <div className="border border-slate-200 bg-[#f7faf6] p-5">
+                      <ShieldCheck className="h-6 w-6 text-emerald-700" />
+                      <p className="mt-5 text-sm font-semibold text-slate-950">Secure by default</p>
+                      <p className="mt-1 text-xs leading-5 text-slate-600">Cloud-ready systems with careful access control.</p>
+                    </div>
+                  </div>
 
-        {/* Buttons */}
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-
-          <Link
-            to="/products"
-            className="px-6 py-3 bg-blue-800 text-white rounded-lg font-semibold hover:bg-blue-900 transition"
-            style={{ color: "white" }}  >
-            Explore Products
-          </Link>
-
-          <Link
-            to="/contact"
-            className="px-6 py-3 bg-white border border-slate-200 text-slate-700 rounded-lg font-semibold hover:bg-slate-50 transition"
-          >
-            Talk to Us
-          </Link>
-
+                  <div className="border border-slate-200 p-5">
+                    {["Discovery", "Implementation", "Optimization"].map((item) => (
+                      <div key={item} className="flex items-center gap-3 py-2 text-sm font-medium text-slate-800">
+                        <CheckCircle2 className="h-5 w-5 text-emerald-600" />
+                        {item}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        {/* Product pills */}
-        <div className="mt-10 flex flex-wrap justify-center gap-2">
-          {["Eduline", "WhatsApp CRM", "Billing & Stock"].map((item) => (
-            <span
-              key={item}
-              className="px-3 py-1.5 bg-white border border-slate-200 rounded-full text-sm text-slate-600 shadow-sm"
-            >
-              {item}
-            </span>
+        <div className="mt-16 grid gap-5 lg:grid-cols-3">
+          {highlights.map((item) => (
+            <article key={item.label} className="border border-slate-200 bg-white p-6">
+              <p className="text-sm font-semibold uppercase tracking-[0.12em] text-emerald-700">{item.label}</p>
+              <h2 className="mt-3 text-xl font-semibold leading-7 text-slate-950">{item.title}</h2>
+              <Link to="/resources" className="mt-5 inline-flex items-center gap-2 font-semibold text-emerald-800">
+                Learn more
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </article>
           ))}
         </div>
-
       </div>
-
-      {/* Image */}
-      {/* Image */}
-      {/* <motion.div
-        ref={imgRef}
-        initial={{ opacity: 0, scale: 0.85, y: 40 }}
-        animate={visible ? { opacity: 1, scale: 1, y: 0 } : {}}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        className="mt-12 w-full max-w-5xl px-4"
-      >
-        <img
-          src="/imgtest.webp"
-          alt="Dashboard preview"
-          className="rounded-xl shadow-2xl border border-white w-full"
-        />
-      </motion.div> */}
-
-
     </section>
   );
 }

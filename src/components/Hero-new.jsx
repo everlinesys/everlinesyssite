@@ -21,7 +21,7 @@ export default function HeroDev() {
                 border-2
                 border-slate-900
                 text-slate-900
-                font-black
+                font-semibold
                 text-xs
                 uppercase
                 tracking-widest
@@ -38,7 +38,7 @@ export default function HeroDev() {
                 text-5xl
                 sm:text-7xl
                 lg:text-8xl
-                font-black
+                font-semibold
                 text-slate-900
                 uppercase
                 tracking-tighter
@@ -72,7 +72,7 @@ export default function HeroDev() {
             <p
               className="
                 text-slate-800
-                font-bold
+                font-semibold
                 text-sm
                 sm:text-base
                 border-l-4
@@ -109,15 +109,15 @@ export default function HeroDev() {
 
             <div className="flex flex-wrap gap-3 mb-8">
 
-              <div className="px-3 py-1 border-2 border-slate-900 bg-emerald-400 text-xs font-black uppercase">
+              <div className="px-3 py-1 border-2 border-slate-900 bg-emerald-400 text-xs font-semibold uppercase">
                 Build Once
               </div>
 
-              <div className="px-3 py-1 border-2 border-slate-900 bg-white text-xs font-black uppercase">
+              <div className="px-3 py-1 border-2 border-slate-900 bg-white text-xs font-semibold uppercase">
                 Run Forever
               </div>
 
-              <div className="px-3 py-1 border-2 border-slate-900 bg-slate-900 text-white text-xs font-black uppercase">
+              <div className="px-3 py-1 border-2 border-slate-900 bg-slate-900 text-white text-xs font-semibold uppercase">
                 Since 2022
               </div>
 
@@ -128,7 +128,7 @@ export default function HeroDev() {
                 text-3xl
                 sm:text-4xl
                 lg:text-5xl
-                font-black
+                font-semibold
                 uppercase
                 tracking-tight
                 text-slate-900
@@ -147,7 +147,7 @@ export default function HeroDev() {
                 text-slate-700
                 text-base
                 sm:text-lg
-                font-bold
+                font-semibold
                 max-w-2xl
               "
             >
@@ -167,7 +167,7 @@ export default function HeroDev() {
                   text-white
                   px-6
                   py-4
-                  font-black
+                  font-semibold
                   uppercase
                   text-center
                   shadow-[4px_4px_0_0_rgba(52,211,153,1)]
@@ -186,7 +186,7 @@ export default function HeroDev() {
                   text-slate-900
                   px-6
                   py-4
-                  font-black
+                  font-semibold
                   uppercase
                   text-center
                   shadow-[4px_4px_0_0_rgba(15,23,42,1)]
@@ -212,7 +212,7 @@ export default function HeroDev() {
             "
           >
 
-            <div className="text-xs uppercase font-black tracking-widest">
+            <div className="text-xs uppercase font-semibold tracking-widest">
               Featured Product
             </div>
 
@@ -220,7 +220,7 @@ export default function HeroDev() {
               className="
                 mt-4
                 text-4xl
-                font-black
+                font-semibold
                 uppercase
                 tracking-tight
               "
@@ -228,7 +228,7 @@ export default function HeroDev() {
               Eduline
             </h3>
 
-            <p className="mt-4 font-bold text-slate-800">
+            <p className="mt-4 font-semibold text-slate-800">
               Launch your own branded academy with courses,
               certificates, exams, payments and student
               management.
@@ -236,7 +236,7 @@ export default function HeroDev() {
 
             <div className="mt-8 border-t-2 border-slate-900 pt-4">
 
-              <div className="flex justify-between font-black text-sm uppercase">
+              <div className="flex justify-between font-semibold text-sm uppercase">
                 <span>Platform Status</span>
                 <span>Online</span>
               </div>
@@ -260,15 +260,15 @@ export default function HeroDev() {
               shadow-[8px_8px_0_0_rgba(52,211,153,1)]
             "
           >
-            <div className="text-xs font-black uppercase">
+            <div className="text-xs font-semibold uppercase">
               Experience
             </div>
 
-            <div className="text-5xl font-black mt-3">
+            <div className="text-5xl font-semibold mt-3">
               4+
             </div>
 
-            <p className="mt-2 font-bold text-slate-700">
+            <p className="mt-2 font-semibold text-slate-700">
               Years Building Platforms
             </p>
           </div>
@@ -282,15 +282,15 @@ export default function HeroDev() {
               shadow-[8px_8px_0_0_rgba(15,23,42,1)]
             "
           >
-            <div className="text-xs font-black uppercase">
+            <div className="text-xs font-semibold uppercase">
               Projects
             </div>
 
-            <div className="text-5xl font-black mt-3">
+            <div className="text-5xl font-semibold mt-3">
               50+
             </div>
 
-            <p className="mt-2 font-bold">
+            <p className="mt-2 font-semibold">
               Delivered Successfully
             </p>
           </div>
@@ -305,15 +305,15 @@ export default function HeroDev() {
               shadow-[8px_8px_0_0_rgba(52,211,153,1)]
             "
           >
-            <div className="text-xs font-black uppercase text-emerald-300">
+            <div className="text-xs font-semibold uppercase text-emerald-300">
               Support
             </div>
 
-            <div className="text-5xl font-black mt-3">
+            <div className="text-5xl font-semibold mt-3">
               24/7
             </div>
 
-            <p className="mt-2 font-bold text-slate-300">
+            <p className="mt-2 font-semibold text-slate-300">
               Technical Assistance
             </p>
           </div>

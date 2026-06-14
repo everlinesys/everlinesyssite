@@ -35,18 +35,18 @@ export default function TechStack() {
         
         {/* ================= HEADER SECTION ================= */}
         <div className="text-center mb-24">
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-slate-900 text-emerald-400 border-2 border-slate-900 text-xs font-mono font-black uppercase tracking-widest shadow-[3px_3px_0_0_rgba(52,211,153,1)] -rotate-1 mb-6">
+          <div className="inline-flex items-center gap-2 px-3 py-1 bg-slate-900 text-emerald-400 border-2 border-slate-900 text-xs font-mono font-semibold uppercase tracking-widest shadow-[3px_3px_0_0_rgba(52,211,153,1)] -rotate-1 mb-6">
             [ COMPILER_ENGINE_v4.0 ]
           </div>
 
-          <h2 className="text-4xl md:text-6xl font-black text-slate-900 uppercase tracking-tighter leading-none mb-6">
+          <h2 className="text-4xl md:text-6xl font-semibold text-slate-900 uppercase tracking-tighter leading-none mb-6">
             Technologies We <br />
             <span className="inline-block bg-slate-900 text-emerald-400 px-4 py-2 mt-2 transform rotate-1 border-4 border-slate-900 shadow-[6px_6px_0_0_rgba(15,23,42,1)]">
               Use & Master
             </span>
           </h2>
           
-          <p className="text-base md:text-lg text-slate-800 font-bold max-w-2xl mx-auto border-l-4 border-r-4 border-slate-900 px-6 py-2 mt-8">
+          <p className="text-base md:text-lg text-slate-800 font-semibold max-w-2xl mx-auto border-l-4 border-r-4 border-slate-900 px-6 py-2 mt-8">
             We build scalable systems using modern, battle-tested technologies
             trusted by high-growth startups and enterprises worldwide.
           </p>
@@ -65,7 +65,7 @@ export default function TechStack() {
                            hover:bg-slate-900 cursor-crosshair"
               >
                 {/* Structural Technical Corner Decorator */}
-                <div className="absolute top-1 right-2 font-mono text-[8px] font-black text-slate-300 group-hover:text-emerald-400/40 transition-colors">
+                <div className="absolute top-1 right-2 font-mono text-[8px] font-semibold text-slate-300 group-hover:text-emerald-400/40 transition-colors">
                   //0{i + 1}
                 </div>
 
@@ -78,7 +78,7 @@ export default function TechStack() {
                 </div>
 
                 {/* Text Indicator Label */}
-                <span className="mt-5 text-xs font-black uppercase tracking-wider text-slate-900 text-center bg-emerald-400 px-2 py-0.5 border-2 border-slate-900 group-hover:bg-white group-hover:text-slate-900 shadow-[2px_2px_0_0_rgba(15,23,42,1)] group-hover:shadow-[0_0_0_0_rgba(0,0,0,0)] transition-all duration-150">
+                <span className="mt-5 text-xs font-semibold uppercase tracking-wider text-slate-900 text-center bg-emerald-400 px-2 py-0.5 border-2 border-slate-900 group-hover:bg-white group-hover:text-slate-900 shadow-[2px_2px_0_0_rgba(15,23,42,1)] group-hover:shadow-[0_0_0_0_rgba(0,0,0,0)] transition-all duration-150">
                   {item.name}
                 </span>
 

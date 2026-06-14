@@ -20,11 +20,11 @@ function Section({ number, title, children }) {
         shadow-[8px_8px_0_0_rgba(15,23,42,1)]
       "
     >
-      <div className="text-xs uppercase font-black tracking-widest text-emerald-600">
+      <div className="text-xs uppercase font-semibold tracking-widest text-emerald-600">
         Section {number}
       </div>
 
-      <h2 className="mt-3 text-3xl font-black text-slate-950">
+      <h2 className="mt-3 text-3xl font-semibold text-slate-950">
         {title}
       </h2>
 
@@ -80,7 +80,7 @@ export default function TermsConditions() {
                 py-2
                 bg-emerald-400
                 text-slate-950
-                font-black
+                font-semibold
                 uppercase
                 text-xs
               "
@@ -94,7 +94,7 @@ export default function TermsConditions() {
                 mt-8
                 text-5xl
                 md:text-7xl
-                font-black
+                font-semibold
                 leading-none
               "
             >
@@ -130,15 +130,15 @@ export default function TermsConditions() {
               shadow-[12px_12px_0_0_rgba(15,23,42,1)]
             "
           >
-            <div className="text-xs uppercase font-black">
+            <div className="text-xs uppercase font-semibold">
               Effective Date
             </div>
 
-            <div className="mt-4 text-5xl font-black">
+            <div className="mt-4 text-5xl font-semibold">
               2024
             </div>
 
-            <div className="mt-6 text-lg font-bold">
+            <div className="mt-6 text-lg font-semibold">
               Everline Systems
             </div>
 
@@ -301,11 +301,11 @@ export default function TermsConditions() {
             shadow-[8px_8px_0_0_rgba(16,185,129,1)]
           "
         >
-          <div className="text-emerald-400 text-xs uppercase font-black">
+          <div className="text-emerald-400 text-xs uppercase font-semibold">
             Agreement
           </div>
 
-          <p className="mt-4 text-xl font-bold">
+          <p className="mt-4 text-xl font-semibold">
             By using Everline Systems products and services,
             you acknowledge and agree to these Terms & Conditions.
           </p>

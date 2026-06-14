@@ -2,342 +2,172 @@ import {
   Mail,
   Phone,
   MapPin,
-  Send,
-  Clock,
-  ArrowUpRight,
+  MessageSquare,
+  ArrowRight,
 } from "lucide-react";
 
 export default function Contact() {
-  return (
-    <section className="relative py-32 bg-[#f7faf8] overflow-hidden text-slate-900">
+  return (<section className="bg-[#f5f5f3] py-24 lg:py-32"> <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
-      {/* Grid */}
-      <div
-        className="absolute inset-0 opacity-50"
-        style={{
-          backgroundImage: `
-            linear-gradient(to right, rgba(16,185,129,.08) 1px, transparent 1px),
-            linear-gradient(to bottom, rgba(16,185,129,.08) 1px, transparent 1px)
-          `,
-          backgroundSize: "40px 40px",
-        }}
-      />
 
-      {/* Glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[700px] bg-emerald-300/20 blur-3xl rounded-full" />
+    {/* Header */}
+    <div className="max-w-4xl mb-20">
 
-      <div className="relative max-w-7xl mx-auto px-6">
+      <span className="text-blue-700 font-semibold text-sm uppercase tracking-wide">
+        Contact Us
+      </span>
 
-        {/* Header */}
+      <h1 className="mt-4 text-5xl lg:text-7xl font-semibold tracking-tight leading-[0.95] text-slate-900">
+        Let's discuss
+        your next project.
+      </h1>
 
-        <div className="mb-20">
+      <p className="mt-8 text-xl text-slate-600 leading-relaxed max-w-3xl">
+        Whether you're looking for a learning platform,
+        business automation, or custom software,
+        we'd love to learn more about your goals.
+      </p>
 
-          <div className="
-            inline-flex
-            items-center
-            gap-2
-            px-4
-            py-2
-            bg-white
-            border-2
-            border-slate-950
-            shadow-[4px_4px_0_0_rgba(15,23,42,1)]
-            text-xs
-            uppercase
-            tracking-widest
-            font-black
-          ">
-            ● Contact
-          </div>
+    </div>
 
-          <h2 className="
-            mt-8
-            text-5xl
-            md:text-7xl
-            font-black
-            tracking-tight
-            leading-none
-            text-slate-950
-          ">
-            LET'S BUILD
-            <br />
-            SOMETHING
-            <br />
-            <span className="text-emerald-600">
-              REMARKABLE.
-            </span>
+    <div className="grid lg:grid-cols-12 gap-10">
+
+      {/* Left */}
+      <div className="lg:col-span-4">
+
+        <div className="bg-white rounded-3xl border border-slate-200 p-8">
+
+          <h2 className="text-2xl font-semibold text-slate-900">
+            Contact Information
           </h2>
+
+          <div className="mt-8 space-y-8">
+
+            <div className="flex gap-4">
+              <Mail className="text-blue-700 shrink-0" />
+
+              <div>
+                <div className="text-sm text-slate-500">
+                  Email
+                </div>
+
+                <div className="font-medium text-slate-900">
+                  contact@everlinesys.com
+                </div>
+              </div>
+            </div>
+
+            <div className="flex gap-4">
+              <Phone className="text-blue-700 shrink-0" />
+
+              <div>
+                <div className="text-sm text-slate-500">
+                  Phone
+                </div>
+
+                <div className="font-medium text-slate-900">
+                  +91 94006 90911
+                </div>
+              </div>
+            </div>
+
+            <div className="flex gap-4">
+              <MapPin className="text-blue-700 shrink-0" />
+
+              <div>
+                <div className="text-sm text-slate-500">
+                  Location
+                </div>
+
+                <div className="font-medium text-slate-900">
+                  Kakkanad, Kochi
+                </div>
+              </div>
+            </div>
+
+          </div>
 
         </div>
 
-        <div className="grid lg:grid-cols-12 gap-6">
+        <div className="mt-6 bg-slate-900 text-white rounded-3xl p-8">
 
-          {/* Left */}
-
-          <div className="lg:col-span-5 space-y-6">
-
-            {/* Contact Card */}
-
-            <div className="
-              bg-slate-950
-              text-white
-              border-4
-              border-slate-950
-              p-8
-              shadow-[12px_12px_0_0_rgba(16,185,129,1)]
-            ">
-
-              <div className="
-                text-xs
-                uppercase
-                tracking-widest
-                font-black
-                text-emerald-400
-              ">
-                Contact Information
-              </div>
-
-              <div className="mt-8 space-y-8">
-
-                <div className="flex gap-4">
-                  <Mail className="text-emerald-400 shrink-0" />
-                  <div>
-                    <div className="text-xs uppercase font-black text-slate-400">
-                      Email
-                    </div>
-                    <div className="text-xl font-black">
-                      contact@everlinesys.com
-                    </div>
-                  </div>
-                </div>
-
-                <div className="flex gap-4">
-                  <Phone className="text-emerald-400 shrink-0" />
-                  <div>
-                    <div className="text-xs uppercase font-black text-slate-400">
-                      Phone
-                    </div>
-                    <div className="text-xl font-black">
-                      +91 94006 90911
-                    </div>
-                  </div>
-                </div>
-
-                <div className="flex gap-4">
-                  <MapPin className="text-emerald-400 shrink-0" />
-                  <div>
-                    <div className="text-xs uppercase font-black text-slate-400">
-                      Location
-                    </div>
-                    <div className="text-xl font-black">
-                      Kakkanad
-                    </div>
-                    <div className="text-slate-400">
-                      Near Infopark Phase 2
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
-
-            {/* Response Card */}
-
-            <div className="
-              bg-white
-              border-4
-              border-slate-950
-              p-8
-              shadow-[8px_8px_0_0_rgba(15,23,42,1)]
-            ">
-
-              <Clock className="mb-4" />
-
-              <div className="
-                text-xs
-                uppercase
-                font-black
-              ">
-                Response Time
-              </div>
-
-              <div className="
-                mt-4
-                text-4xl
-                font-black
-              ">
-                2-4 Hours
-              </div>
-
-              <p className="
-                mt-3
-                text-slate-600
-              ">
-                Typical response time during business hours.
-              </p>
-
-            </div>
-
+          <div className="text-sm uppercase tracking-wide text-blue-400">
+            Preferred Contact Method
           </div>
 
-          {/* Form */}
+          <h3 className="mt-3 text-2xl font-semibold">
+            WhatsApp
+          </h3>
 
-          <div className="
-            lg:col-span-7
-            bg-white
-            border-4
-            border-slate-950
-            p-8
-            md:p-10
-            shadow-[12px_12px_0_0_rgba(15,23,42,1)]
-          ">
+          <p className="mt-4 text-slate-300">
+            Get a response quickly and discuss your requirements directly.
+          </p>
 
-            <div className="
-              text-xs
-              uppercase
-              tracking-widest
-              font-black
-              mb-8
-            ">
-              Start A Conversation
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-5">
-
-              <input
-                type="text"
-                placeholder="Your Name"
-                className="
-                  border-4
-                  border-slate-950
-                  p-4
-                  font-bold
-                  outline-none
-                  focus:bg-emerald-50
-                "
-              />
-
-              <input
-                type="email"
-                placeholder="Email Address"
-                className="
-                  border-4
-                  border-slate-950
-                  p-4
-                  font-bold
-                  outline-none
-                  focus:bg-emerald-50
-                "
-              />
-
-            </div>
-
-            <input
-              type="text"
-              placeholder="Company / Organization"
-              className="
-                mt-5
-                w-full
-                border-4
-                border-slate-950
-                p-4
-                font-bold
-                outline-none
-                focus:bg-emerald-50
-              "
-            />
-
-            <textarea
-              rows={7}
-              placeholder="Tell us about your project..."
-              className="
-                mt-5
-                w-full
-                border-4
-                border-slate-950
-                p-4
-                font-bold
-                outline-none
-                resize-none
-                focus:bg-emerald-50
-              "
-            />
-
-            <div className="
-              mt-8
-              flex
-              flex-col
-              md:flex-row
-              gap-4
-            ">
-
-              <a
-                href="https://wa.me/919400690911?text=Hello%20Everline%20Systems"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="
-                  flex-1
-                  bg-emerald-400
-                  text-slate-950
-                  border-4
-                  border-slate-950
-                  py-5
-                  px-6
-                  font-black
-                  uppercase
-                  flex
-                  items-center
-                  justify-center
-                  gap-3
-                  shadow-[8px_8px_0_0_rgba(15,23,42,1)]
-                  hover:translate-x-1
-                  hover:translate-y-1
-                  hover:shadow-none
-                  transition-all
-                "
-              >
-                Send Message
-                <Send size={18} />
-              </a>
-
-              <a
-                href="mailto:contact@everlinesys.com"
-                className="
-                  px-8
-                  border-4
-                  border-slate-950
-                  py-5
-                  font-black
-                  uppercase
-                  flex
-                  items-center
-                  justify-center
-                  gap-2
-                  bg-white
-                "
-              >
-                Email Us
-                <ArrowUpRight size={18} />
-              </a>
-
-            </div>
-
-            <p className="
-              mt-6
-              text-xs
-              uppercase
-              font-black
-              text-slate-400
-            ">
-              Build Once. Run Forever.
-            </p>
-
-          </div>
+          <a
+            href="https://wa.me/919400690911"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 mt-6 bg-white text-slate-900 px-5 py-3 rounded-full font-medium"
+          >
+            Chat on WhatsApp
+            <MessageSquare size={18} />
+          </a>
 
         </div>
 
       </div>
-    </section>
+
+      {/* Form */}
+      <div className="lg:col-span-8">
+
+        <div className="bg-white rounded-3xl border border-slate-200 p-8 lg:p-10">
+
+          <h2 className="text-2xl font-semibold text-slate-900">
+            Tell us about your project
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-5 mt-8">
+
+            <input
+              type="text"
+              placeholder="Name"
+              className="border border-slate-300 rounded-xl p-4 outline-none focus:border-blue-600"
+            />
+
+            <input
+              type="email"
+              placeholder="Email"
+              className="border border-slate-300 rounded-xl p-4 outline-none focus:border-blue-600"
+            />
+
+          </div>
+
+          <input
+            type="text"
+            placeholder="Company"
+            className="mt-5 w-full border border-slate-300 rounded-xl p-4 outline-none focus:border-blue-600"
+          />
+
+          <textarea
+            rows={7}
+            placeholder="Tell us about your project..."
+            className="mt-5 w-full border border-slate-300 rounded-xl p-4 outline-none resize-none focus:border-blue-600"
+          />
+
+          <button className="mt-8 inline-flex items-center gap-2 bg-slate-900 text-white px-7 py-4 rounded-full font-medium">
+            Send Inquiry
+            <ArrowRight size={18} />
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  </section>
+
+
   );
 }

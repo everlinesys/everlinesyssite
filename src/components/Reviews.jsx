@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion as Motion } from "framer-motion";
 
 const reviews = [
   {
@@ -63,11 +63,11 @@ export default function Reviews() {
 
         <div className="mb-16">
 
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white border-2 border-slate-950 font-black uppercase text-xs tracking-widest">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white border-2 border-slate-950 font-semibold uppercase text-xs tracking-widest">
             ● Testimonials
           </div>
 
-          <h2 className="mt-6 text-5xl md:text-7xl font-black tracking-tight text-slate-950">
+          <h2 className="mt-6 text-5xl md:text-7xl font-semibold tracking-tight text-slate-950">
             PEOPLE
             <br />
             LOVE WHAT
@@ -85,26 +85,26 @@ export default function Reviews() {
 
           <div className="lg:col-span-8 bg-slate-950 text-white border-4 border-slate-950 p-10 md:p-14 shadow-[12px_12px_0_0_rgba(16,185,129,1)]">
 
-            <div className="text-emerald-400 text-8xl font-black leading-none">
+            <div className="text-emerald-400 text-8xl font-semibold leading-none">
               "
             </div>
 
             <AnimatePresence mode="wait">
 
-              <motion.div
+              <Motion.div
                 key={index}
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -40 }}
                 transition={{ duration: 0.35 }}
               >
-                <h3 className="text-3xl md:text-5xl font-black leading-tight mt-4">
+                <h3 className="text-3xl md:text-5xl font-semibold leading-tight mt-4">
                   {reviews[index].quote}
                 </h3>
 
                 <div className="mt-12">
 
-                  <div className="text-2xl font-black">
+                  <div className="text-2xl font-semibold">
                     {reviews[index].name}
                   </div>
 
@@ -114,7 +114,7 @@ export default function Reviews() {
 
                 </div>
 
-              </motion.div>
+              </Motion.div>
 
             </AnimatePresence>
 
@@ -128,7 +128,7 @@ export default function Reviews() {
 
               <AnimatePresence mode="wait">
 
-                <motion.img
+                <Motion.img
                   key={index}
                   src={reviews[index].image}
                   alt={reviews[index].name}
@@ -145,7 +145,7 @@ export default function Reviews() {
 
               <div className="absolute bottom-0 left-0 right-0 p-6">
 
-                <div className="bg-emerald-400 text-slate-950 inline-block px-3 py-1 font-black text-xs uppercase">
+                <div className="bg-emerald-400 text-slate-950 inline-block px-3 py-1 font-semibold text-xs uppercase">
                   Verified Client
                 </div>
 
@@ -159,7 +159,7 @@ export default function Reviews() {
 
           <div className="lg:col-span-3 bg-white border-4 border-slate-950 p-8 shadow-[8px_8px_0_0_rgba(15,23,42,1)]">
 
-            <div className="text-xs uppercase font-black mb-6">
+            <div className="text-xs uppercase font-semibold mb-6">
               Navigation
             </div>
 
@@ -173,7 +173,7 @@ export default function Reviews() {
                   border-4
                   border-slate-950
                   py-4
-                  font-black
+                  font-semibold
                   hover:bg-emerald-400
                   transition
                 "
@@ -189,7 +189,7 @@ export default function Reviews() {
                   border-4
                   border-slate-950
                   py-4
-                  font-black
+                  font-semibold
                   hover:bg-emerald-300
                   transition
                 "
@@ -205,11 +205,11 @@ export default function Reviews() {
 
           <div className="lg:col-span-3 bg-emerald-400 border-4 border-slate-950 p-8 shadow-[8px_8px_0_0_rgba(15,23,42,1)]">
 
-            <div className="text-xs uppercase font-black">
+            <div className="text-xs uppercase font-semibold">
               Satisfaction
             </div>
 
-            <div className="text-7xl font-black mt-4">
+            <div className="text-7xl font-semibold mt-4">
               98%
             </div>
 
@@ -219,11 +219,11 @@ export default function Reviews() {
 
           <div className="lg:col-span-6 bg-white border-4 border-slate-950 p-8 shadow-[8px_8px_0_0_rgba(15,23,42,1)]">
 
-            <div className="text-xs uppercase font-black">
+            <div className="text-xs uppercase font-semibold">
               Build Once. Run Forever.
             </div>
 
-            <h3 className="text-3xl md:text-4xl font-black mt-4">
+            <h3 className="text-3xl md:text-4xl font-semibold mt-4">
               Trusted by educators,
               businesses and growing brands.
             </h3>

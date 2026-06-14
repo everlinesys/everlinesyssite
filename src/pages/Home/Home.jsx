@@ -14,13 +14,13 @@ export default function Home() {
     return (
         <div>
             {/* <AnnouncementBar /> */}
-            {/* <Hero /> */}
-            <HeroDev />
-            <Works />
+            <Hero />
+            {/* <HeroDev /> */}
+            {/* <Works /> */}
             <ProductIntro />
             <Capabilities />
-            <BackedBy />
-            <TechStack />
+            {/* <BackedBy />
+            <TechStack /> */}
             <Trust />
             {/* <Reviews /> */}
             <CTA />
