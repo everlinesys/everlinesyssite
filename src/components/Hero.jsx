@@ -21,7 +21,7 @@ export default function Hero() {
     <section className="overflow-hidden border-t border-slate-200 bg-[#f7faf6]">
       <div className="mx-auto max-w-[1400px] px-5 py-16 sm:px-8 lg:px-10 lg:py-4">
         <div className="grid gap-12 lg:grid-cols-[1.02fr_0.98fr] lg:items-center">
-          <div>
+          <div >
             <p className="text-sm font-semibold uppercase tracking-[0.14em] text-emerald-700">
               Business systems, learning platforms, and automation
             </p>
@@ -30,13 +30,9 @@ export default function Hero() {
               Build a digital ecosystem your teams actually use.
             </h1>
 
-            <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-700">
-              Everline Systems helps growing organizations launch polished software,
-              connect operations, and turn disconnected workflows into reliable,
-              measurable systems.
-            </p>
 
-            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+
+            <div className="mt-3 flex flex-col gap-3 sm:flex-row">
               <Link
                 to="/contact"
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-700 px-7 py-4 font-semibold text-white transition hover:bg-emerald-800"
@@ -52,7 +48,11 @@ export default function Hero() {
                 Explore products
               </Link>
             </div>
-
+            <p className="mt-5 md:mb-27 max-w-2xl text-lg leading-8 text-slate-700">
+              Everline Systems helps growing organizations launch polished software,
+              connect operations, and turn disconnected workflows into reliable,
+              measurable systems.
+            </p>
             <div className="mt-10 grid max-w-2xl gap-4 sm:grid-cols-3">
               {[
                 ["99.9%", "reliable cloud delivery"],
